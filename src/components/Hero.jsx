@@ -15,7 +15,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText}`}>Hi, i'm <span className='text-[#915eff]'>Anna</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I do that do this dododododo <br className='sm:block hidden'/> and also make thos that and <br className='sm:block hidden'/>weeweeewee
+          I develop BIM plugins, web-applications and automate AEC processes. <br className='sm:block hidden'/> BIM Developer & <br className='sm:block hidden'/>BIM Specialist
           </p>
         </div>
       </div>

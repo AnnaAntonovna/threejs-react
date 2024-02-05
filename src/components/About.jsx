@@ -45,11 +45,12 @@ const About = () => {
       <motion.p variants={fadeIn("", "", "0.1", 1)}
       className='mt-4 text-secondary text-[17px]
       max-w-3xl leading-[30px]'>
-        sssssssssssssssssss
-        dddddddddddddddddd
-        ffffffffffffffffff
-        ggggggggggggggggg
-        ggggggggggggggggg
+        As a student, I achieved the title of Best BIM Structural Engineer in a national championship. 
+        During my time at Renaissance Construction, an international firm responsible for Europe's tallest skyscraper, 
+        I initiated and executed a successful rebar automation project using Python, Revit API, and Dynamo. After graduation, 
+        I relocated to Europe on my own and expanded my automation skills in C#, WPF, JavaScript, IFC in web. 
+        <br/>
+        I am excited about the possibilities ahead and eager to discover new horizons in the world of BIM!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
