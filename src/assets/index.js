@@ -20,15 +20,30 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import csharp from "./tech/csharp.png";
+import dotnet from "./tech/dotnet.png";
+import firebase from "./tech/firebase.png";
+import ifcjs from "./tech/ifcjs.png";
+import python from "./tech/python.png";
+import revit from "./tech/revit.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import RC from "./company/RC.png";
+import sd from "./company/sd.png";
+import gasu from "./company/gasu.png";
+import AM from "./company/AM.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import rebarUI from "./rebarUI.png";
+import autoCAD from "./autoCAD.png";
+import shaftsUI from "./shaftsUI.png";
+import cropRegion from "./cropRegion.png";
+import ifcjsProject from "./ifcjsProject.png";
 
 export {
   logo,
@@ -59,4 +74,19 @@ export {
   carrent,
   jobit,
   tripguide,
+  RC,
+  sd,
+  gasu,
+  AM,
+  csharp,
+  dotnet,
+  firebase,
+  ifcjs,
+  python,
+  revit,
+  rebarUI,
+  autoCAD,
+  shaftsUI,
+  cropRegion,
+  ifcjsProject,
 };

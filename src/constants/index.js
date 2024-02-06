@@ -15,14 +15,24 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  RC,
+  AM,
+  sd,
+  gasu,
   carrent,
   jobit,
   tripguide,
   threejs,
+  revit,
+  python,
+  csharp,
+  ifcjs,
+  dotnet,
+  rebarUI,
+  autoCAD,
+  shaftsUI,
+  cropRegion,
+  ifcjsProject,
 } from "../assets";
 
 export const navLinks = [
@@ -32,7 +42,11 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio",
   },
   {
     id: "contact",
@@ -61,6 +75,10 @@ const services = [
 
 const technologies = [
   {
+    name: "Revit",
+    icon: revit,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -81,20 +99,16 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "C#",
+    icon: csharp,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Python",
+    icon: python,
   },
   {
     name: "Three JS",
@@ -105,12 +119,12 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: ".Net",
+    icon: dotnet,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "IFC.js",
+    icon: ifcjs,
   },
 ];
 
@@ -118,8 +132,8 @@ const experiences = [
   {
     title: "BIM Specialist → BIM Developer",
     company_name: "Strategie Digitali",
-    icon: starbucks,
-    iconBg: "#383E56",
+    icon: sd,
+    iconBg: "#f0ebeb",
     date: "July 2022 - Present",
     points: [
       "Developed Revit plugins with WPF, tackling complex challenges using advanced tools of Revit API.",
@@ -133,7 +147,7 @@ const experiences = [
   {
     title: "BIM Engineer Intern",
     company_name: "Renaissance Construction",
-    icon: tesla,
+    icon: RC,
     iconBg: "#E6DEDD",
     date: "May 2021 - June 2022",
     points: [
@@ -148,7 +162,7 @@ const experiences = [
     title: "Revit: Structure Teacher",
     company_name:
       "St Petersburg State University of Architecture and Civil Engineering. Part-time.",
-    icon: meta,
+    icon: gasu,
     iconBg: "#E6DEDD",
     date: "January 2022 - May 2022",
     points: [
@@ -158,8 +172,8 @@ const experiences = [
   {
     title: "Junior Civil Engineer",
     company_name: "A.M. Шендеровича. Part-time.",
-    icon: meta,
-    iconBg: "#E6DEDD",
+    icon: AM,
+    iconBg: "#404040",
     date: "Nov 2019 - Feb 2020",
     points: [
       "Gained hands-on experience with real projects in AutoCAD and Revit.",
@@ -198,67 +212,132 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Capital bar reinforcement scripts with UI",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "Dynamo",
+        color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "WinForms",
+        color: "blue-text-gradient",
       },
     ],
-    image: carrent,
+    image: rebarUI,
     source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/772KN7DDoj8?si=-WOEJb89N5oBhC_3",
   },
   {
-    name: "Job IT",
+    name: "Automatization of Revit Reinforcement with DXF",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "Dynamo",
+        color: "blue-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "AutoCAD",
+        color: "blue-text-gradient",
       },
     ],
-    image: jobit,
+    image: autoCAD,
     source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/cFs-5w-FYgQ?si=LfX5W0Wjv752PIkW",
   },
   {
-    name: "Trip Guide",
+    name: "Reinforcement of openings in slab shafts",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "Dynamo",
+        color: "blue-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "WinForms",
+        color: "blue-text-gradient",
       },
     ],
-    image: tripguide,
+    image: shaftsUI,
     source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/ls9d5RRJHcY?si=FX4t6zj071jjewlS",
+  },
+
+  {
+    name: "Revit Plugin: Style Crop Region",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: cropRegion,
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/wEYd5oMvrXA?si=GCup6IWfgrVycygf",
+  },
+
+  {
+    name: "IFCjs React application",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "THREE.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: ifcjsProject,
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/63Sm2AdSNVo?si=Q81unfFy_QxswB2z",
   },
 ];
 
