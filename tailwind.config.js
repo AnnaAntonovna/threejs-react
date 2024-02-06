@@ -18,9 +18,8 @@ module.exports = {
         "warm-brown": "#A3784D",
         "dirty-pink": "#EFCDC8",
         "warm-blue": "#54B1C7",
-        "navy": "#003366",
-        "yellow": "#F6EF66",
-
+        navy: "#003366",
+        yellow: "#F6EF66",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -30,6 +29,15 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "mouse-card": "url('/src/assets/cards/mouse.png')",
+        "house-card": "url('/src/assets/cards/house.jpg')",
+        "hummer-card": "url('/src/assets/cards/hummer.png')",
+        "web-card": "url('/src/assets/cards/web.png')",
+        "back-card": "url('/src/assets/cards/back.png')",
+        "mouse-back-card": "url('/src/assets/cards/mouseBackB.png')",
+        "house-back-card": "url('/src/assets/cards/houseBackB.png')",
+        "hummer-back-card": "url('/src/assets/cards/hummerBackB.png')",
+        "web-back-card": "url('/src/assets/cards/webBackB.png')",
       },
     },
   },

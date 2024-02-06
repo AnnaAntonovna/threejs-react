@@ -45,6 +45,11 @@ import shaftsUI from "./shaftsUI.png";
 import cropRegion from "./cropRegion.png";
 import ifcjsProject from "./ifcjsProject.png";
 
+import houseCard from "./cards/house.jpg";
+import hummerCard from "./cards/hummer.png";
+import mouseCard from "./cards/mouse.png";
+import webCard from "./cards/web.png";
+
 export {
   logo,
   backend,
@@ -89,4 +94,8 @@ export {
   shaftsUI,
   cropRegion,
   ifcjsProject,
+  houseCard,
+  mouseCard,
+  hummerCard,
+  webCard,
 };
