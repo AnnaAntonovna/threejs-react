@@ -1,7 +1,7 @@
-import {Suspense, useEffect, useState, useRef} from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import {Suspense, useEffect, useState} from 'react';
+import { Canvas, } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF, useAnimations } from '@react-three/drei';
-import { Bloom, DepthOfField, EffectComposer, Noise, Vignette } from '@react-three/postprocessing'
+import { Bloom, EffectComposer, } from '@react-three/postprocessing'
 
 import CanvasLoader from '../Loader';
 
@@ -34,8 +34,8 @@ const Computers = ({isMobile}) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [0, -2.4, -1.5] : [4.5, -2.2, 1.5]}
-        rotation={[0, 1.32, 0]}
+        position={isMobile ? [0, -2.4, -1.5] : [4.3, -2.2, 2.5]}
+        rotation={[0, 1.6, 0]}
       />
     </group>
   )
@@ -80,7 +80,6 @@ const ComputersCanvas = () => {
       try{
       <EffectComposer>
         <Bloom luminanceThreshold={0.7} luminanceSmoothing={0.9} height={300} />
-        <Noise opacity={0.02} />
       </EffectComposer>
 } catch{} 
       <Preload all/>

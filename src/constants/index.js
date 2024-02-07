@@ -37,6 +37,9 @@ import {
   mouseCard,
   hummerCard,
   webCard,
+  rayCasting,
+  commandChanger,
+  grass,
 } from "../assets";
 
 export const navLinks = [
@@ -72,7 +75,7 @@ const services = [
       "bg-mouse-card bg-cover bg-no-repeat bg-center hover:bg-mouse-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
   },
   {
-    title: "Web Developer",
+    title: "Web Enthusiast",
     icon: web,
     className:
       "bg-web-card bg-cover bg-no-repeat bg-center hover:bg-web-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
@@ -157,6 +160,23 @@ const experiences = [
     ],
   },
   {
+    title: "Moving to Italy",
+    company_name: "Strategie Digitali",
+    icon: sd,
+    iconBg: "#f0ebeb",
+    date: "February 2022",
+    points: ["Maybe some pictures? Learn more?"],
+  },
+  {
+    title: "Graduation!",
+    company_name:
+      "St Petersburg State University of Architecture and Civil Engineering.",
+    icon: sd,
+    iconBg: "#f0ebeb",
+    date: "July 2022",
+    points: ["Maybe some pictures? Learn more?"],
+  },
+  {
     title: "BIM Engineer Intern",
     company_name: "Renaissance Construction",
     icon: RC,
@@ -180,6 +200,15 @@ const experiences = [
     points: [
       "As the best student structural BIM engineer in Russia and a national BIM champion, I was invited to teach a course on Revit structures at my university while pursuing my studies. In this role, I instructed fellow student engineers on using Revit for structural and civil engineering, including integration with calculation programs and working with analytical models.",
     ],
+  },
+  {
+    title: "Winning National BIM championship!",
+    company_name:
+      "St Petersburg State University of Architecture and Civil Engineering.",
+    icon: sd,
+    iconBg: "#f0ebeb",
+    date: "July 2022",
+    points: ["Maybe some pictures? Learn more?"],
   },
   {
     title: "Junior Civil Engineer",
@@ -245,9 +274,9 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: rebarUI,
     source_code_link: "https://github.com/",
     src: "https://www.youtube.com/embed/772KN7DDoj8?si=-WOEJb89N5oBhC_3",
+    video: true,
   },
   {
     name: "Automatization of Revit Reinforcement with DXF",
@@ -271,9 +300,9 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: autoCAD,
     source_code_link: "https://github.com/",
     src: "https://www.youtube.com/embed/cFs-5w-FYgQ?si=LfX5W0Wjv752PIkW",
+    video: true,
   },
   {
     name: "Reinforcement of openings in slab shafts",
@@ -297,9 +326,9 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: shaftsUI,
     source_code_link: "https://github.com/",
     src: "https://www.youtube.com/embed/ls9d5RRJHcY?si=FX4t6zj071jjewlS",
+    video: true,
   },
 
   {
@@ -316,13 +345,14 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: cropRegion,
     source_code_link: "https://github.com/",
     src: "https://www.youtube.com/embed/wEYd5oMvrXA?si=GCup6IWfgrVycygf",
+    video: true,
+    github: false,
   },
 
   {
-    name: "IFCjs React application",
+    name: "IFCjs React application 🔇",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -347,10 +377,117 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: ifcjsProject,
     source_code_link: "https://github.com/",
     src: "https://www.youtube.com/embed/63Sm2AdSNVo?si=Q81unfFy_QxswB2z",
+    video: true,
+    github: true,
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const talks = [
+  {
+    name: "Lesson: 'Sections By Curve' 🔊",
+    description:
+      "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/Fic5BD-s3A8?si=rl5QDNFRjU3XqxKs",
+    video: true,
+    github: false,
+  },
+  {
+    name: "Article: 'Selection by Ray Casting'",
+    description:
+      "It's common knowledge how selecting elements works in Revit. We have our trusty tools for manual selection and the beloved Filtered Elements Collector, which automatically gathers elements based on their parameter values and properties. Sounds great, what else could we need? 🤔",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "RevitAPI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: rayCasting,
+    src: "",
+    source_code_link: "https://github.com/",
+    video: false,
+    github: false,
+  },
+  {
+    name: "Article: 'Revit API: Command Binding'",
+    description:
+      "It’s been a while since I’ve found “AddInCommandBinding” and has been dreaming to play with it… But why would you want to mess around with default commands, you might ask? Well, it's not about being an evil developer who likes to play pranks on colleagues.",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "RevitAPI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: commandChanger,
+    src: "",
+    source_code_link: "https://github.com/",
+    video: false,
+    github: false,
+  },
+  {
+    name: "Article: 'Exporting Elements as a family'",
+    description:
+      "Grasshopper and Revit API: Exporting Elements – A Family Drama or a Code Symphony? Oh, boy... That's something else!",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Grasshoppes",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Rhino",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "RevitAPI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "DWG",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: grass,
+    src: "",
+    source_code_link: "https://github.com/",
+    video: false,
+    github: false,
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, talks };

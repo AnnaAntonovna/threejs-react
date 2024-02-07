@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { talks } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -80,12 +80,12 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Talks = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My projects</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>TALKS</p>
+        <h2 className={styles.sectionHeadText}>Lessons&Articles.</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
@@ -99,12 +99,12 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-10">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {talks.map((talks, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...talks} />
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "portfolio");
+export default SectionWrapper(Talks, "talks");

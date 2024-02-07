@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo-svg.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -44,6 +44,9 @@ import autoCAD from "./autoCAD.png";
 import shaftsUI from "./shaftsUI.png";
 import cropRegion from "./cropRegion.png";
 import ifcjsProject from "./ifcjsProject.png";
+import rayCasting from "./rayCasting.png";
+import commandChanger from "./commandChanger.png"
+import grass from "./grass.png"
 
 import houseCard from "./cards/house.jpg";
 import hummerCard from "./cards/hummer.png";
@@ -98,4 +101,7 @@ export {
   mouseCard,
   hummerCard,
   webCard,
+  rayCasting,
+  commandChanger,
+  grass,
 };

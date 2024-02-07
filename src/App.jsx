@@ -1,32 +1,49 @@
-import { BrowserRouter } from "react-router-dom"
-import { About, Contact, Experience, Feedbacks, 
-  Hero, Navbar, Tech, Works, StarsCanvas } from './components'
-import Projects from "./components/Projects"
-import Videos from "./components/Videos"
+import { BrowserRouter } from "react-router-dom";
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from "./components";
+import Videos from "./components/Videos";
+import { useEffect, useState } from "react";
+import { Cube } from "react-preloaders";
+import Sugar from "react-preloaders/lib/Sugar/Sugar";
+import Talks from "./components/Talks";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-cold-gray">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+    <>
+      <Sugar
+        time={1000}
+        background="#f2f2f2"
+        color={"#003366"}
+        animation="slide"
+      />
+      <BrowserRouter>
+        <div className="relative z-0 bg-cold-gray">
+          <div className="bg-cold-gray">
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Talks />
+          <Experience />
+          <Works />
+          <Tech />
+          <Videos />
+          <div className="relative z-0">
+            <Contact />
+            <StarsCanvas />
+          </div>
         </div>
-        <About />
-        <Works />
-        <Experience />
-        <Tech />
-        <Videos />
-        {/* <Feedbacks /> */}
-        {/* <Projects path="/projects"/> */}
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+      </BrowserRouter>
+    </>
+  );
+};
 
-      </div>
-    </BrowserRouter>
-  )
-}
-
-export default App
+export default App;
