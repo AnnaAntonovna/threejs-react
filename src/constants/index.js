@@ -63,25 +63,25 @@ const services = [
     title: "Revit API Developer",
     icon: mobile,
     className:
-      "bg-house-card bg-cover bg-no-repeat bg-center hover:bg-house-back-card rounded-[20px] py-5 px-12 min-h-[370px] flex justify-evenly items-center flex-col",
+      "bg-house-card bg-cover bg-no-repeat bg-center hover:bg-house-back-card rounded-[20px] py-5 px-12 min-w-[248px] h-[370px] flex justify-evenly items-center flex-col",
   },
   {
     title: "BIM Specialist",
     icon: backend,
     className:
-      "bg-mouse-card bg-cover bg-no-repeat bg-center hover:bg-mouse-back-card rounded-[20px] py-5 px-12 min-h-[370px] flex justify-evenly items-center flex-col",
+      "bg-mouse-card bg-cover bg-no-repeat bg-center hover:bg-mouse-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
   },
   {
     title: "Web Developer",
     icon: web,
     className:
-      "bg-web-card bg-cover bg-no-repeat bg-center hover:bg-web-back-card rounded-[20px] py-5 px-12 min-h-[370px] flex justify-evenly items-center flex-col",
+      "bg-web-card bg-cover bg-no-repeat bg-center hover:bg-web-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
   },
   {
     title: "Structural Engineer",
     icon: creator,
     className:
-      "bg-hummer-card bg-cover bg-no-repeat bg-center hover:bg-hummer-back-card rounded-[20px] py-5 px-12 min-h-[370px] flex justify-evenly items-center flex-col",
+      "bg-hummer-card bg-cover bg-no-repeat bg-center hover:bg-hummer-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
   },
 ];
 
