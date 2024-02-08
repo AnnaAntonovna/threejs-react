@@ -9,11 +9,10 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import Videos from "./components/Videos";
 import { useEffect, useState } from "react";
-import { Cube } from "react-preloaders";
 import Sugar from "react-preloaders/lib/Sugar/Sugar";
 import Talks from "./components/Talks";
+import Certificates from "./components/Certificates";
 
 const App = () => {
   return (
@@ -28,14 +27,16 @@ const App = () => {
         <div className="relative z-0 bg-cold-gray">
           <div className="bg-cold-gray">
             <Navbar />
-            <Hero />
           </div>
+          <Hero />
           <About />
           <Talks />
           <Experience />
           <Works />
+          <div className="bg-cert-back bg-cover bg-no-repeat bg-center">
+            <Certificates />
+          </div>
           <Tech />
-          <Videos />
           <div className="relative z-0">
             <Contact />
             <StarsCanvas />

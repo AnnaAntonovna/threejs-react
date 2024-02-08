@@ -39,6 +39,7 @@ module.exports = {
         "house-back-card": "url('/src/assets/cards/houseBackBlue.png')",
         "hummer-back-card": "url('/src/assets/cards/hummerBackBlue.png')",
         "web-back-card": "url('/src/assets/cards/webBackBlue.png')",
+        "cert-back": "url('/src/assets/certsBack.png')",
       },
     },
   },

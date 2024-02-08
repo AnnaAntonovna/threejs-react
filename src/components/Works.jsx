@@ -92,9 +92,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-warm-brown text-[17px] max-w-3xl leading-[30px]"
         >
-          Here are aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa projects
-          offfffffffffffffffffffffff ffffffffff ffffffff ffffffff ffffffff
-          meeeeeeeeeee mememmememem they show how cool I am
+          
         </motion.p>
       </div>
 

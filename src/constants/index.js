@@ -428,7 +428,8 @@ const talks = [
     ],
     image: rayCasting,
     src: "",
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://www.linkedin.com/pulse/selection-ray-casting-when-you-only-know-direction-anna-baranova/?trackingId=pEb7k4VxSvOlLRM3zRTffw%3D%3D",
     video: false,
     github: false,
   },
@@ -452,7 +453,8 @@ const talks = [
     ],
     image: commandChanger,
     src: "",
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://www.linkedin.com/pulse/command-binding-why-would-you-mess-around-default-revit-anna-baranova/",
     video: false,
     github: false,
   },
@@ -484,7 +486,8 @@ const talks = [
     ],
     image: grass,
     src: "",
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://www.linkedin.com/pulse/grasshopper-revit-api-exporting-elements-family-drama-anna-baranova/",
     video: false,
     github: false,
   },

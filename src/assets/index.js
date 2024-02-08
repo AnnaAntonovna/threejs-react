@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import link from "./link.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -45,13 +46,28 @@ import shaftsUI from "./shaftsUI.png";
 import cropRegion from "./cropRegion.png";
 import ifcjsProject from "./ifcjsProject.png";
 import rayCasting from "./rayCasting.png";
-import commandChanger from "./commandChanger.png"
-import grass from "./grass.png"
+import commandChanger from "./commandChanger.png";
+import grass from "./grass.png";
 
 import houseCard from "./cards/house.jpg";
 import hummerCard from "./cards/hummer.png";
 import mouseCard from "./cards/mouse.png";
 import webCard from "./cards/web.png";
+
+import webCert from "./awards/webCert.png";
+import strucCert from "./awards/strucCert.png";
+import pythonCert from "./awards/pythonCert.png";
+import promptCert from "./awards/promptCert.png";
+import micCert from "./awards/micCert.png";
+import ifcCert from "./awards/ifcCert.png";
+import dynamoCert from "./awards/dynamoCert.png";
+import dbCert from "./awards/dbCert.png";
+import csharpCert from "./awards/csharpCert.png";
+import calcSert from "./awards/calcSert.png";
+import bimTeamStCert from "./awards/bimTeamStCert.png";
+import bimStSert from "./awards/bimStSert.png";
+import bimNatTeamSert from "./awards/bimNatTeamSert.png";
+import bimNatSert from "./awards/bimNatSert.png";
 
 export {
   logo,
@@ -104,4 +120,19 @@ export {
   rayCasting,
   commandChanger,
   grass,
+  webCert,
+  strucCert,
+  pythonCert,
+  promptCert,
+  micCert,
+  ifcCert,
+  dynamoCert,
+  dbCert,
+  csharpCert,
+  calcSert,
+  bimNatSert,
+  bimStSert,
+  bimTeamStCert,
+  bimNatTeamSert,
+  link,
 };

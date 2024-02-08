@@ -215,4 +215,18 @@
   }
 }
 
+.swiper-button-prev {
+  color: #003366; 
+}
 
+.swiper-button-next {
+  color: #003366; 
+}
+
+.swiper-pagination{
+  color: #003366;
+}
+
+.swiper_controller{
+  color: #003366;
+}

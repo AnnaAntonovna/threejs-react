@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Navigate } from "react-router-dom";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { talks } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -54,12 +54,12 @@ const ProjectCard = ({
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
             onClick={() => window.open(source_code_link, "_blank")}
-            className="z-30 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
+            className="z-30 bg-navy w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
           >
             <img
-              src={github}
-              alt="github"
-              className="w-1/2 h-1/2 object-contain"
+              src={link}
+              alt="linkedIn"
+              className="object-contain cursor-pointer"
             />
           </div>
         </div>
@@ -92,9 +92,11 @@ const Talks = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-warm-brown text-[17px] max-w-3xl leading-[30px]"
         >
-          Here are aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa projects
-          offfffffffffffffffffffffff ffffffffff ffffffff ffffffff ffffffff
-          meeeeeeeeeee mememmememem they show how cool I am
+          I really enjoy sharing creative ways to solve tough problems that were
+          almost officially marked as impossible even by Autodesk Developers. I
+          prefer to present these solutions as adventurous journeys rather than
+          diving into heavy theory. It inspires me to explain innovative
+          approaches in a light and accessible manner.
         </motion.p>
       </div>
 
