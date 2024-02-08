@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   About,
   Contact,
@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import Sugar from "react-preloaders/lib/Sugar/Sugar";
 import Talks from "./components/Talks";
 import Certificates from "./components/Certificates";
+import Plan from "./components/Plan";
 
 const App = () => {
   return (
@@ -28,19 +29,29 @@ const App = () => {
           <div className="bg-cold-gray">
             <Navbar />
           </div>
-          <Hero />
-          <About />
-          <Talks />
-          <Experience />
-          <Works />
-          <div className="bg-cert-back bg-cover bg-no-repeat bg-center">
-            <Certificates />
-          </div>
-          <Tech />
-          <div className="relative z-0">
-            <Contact />
-            <StarsCanvas />
-          </div>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <About />
+                  <Talks />
+                  <Experience />
+                  <div className="bg-cert-back bg-cover bg-no-repeat bg-center">
+                    <Certificates />
+                  </div>
+                  <Tech />
+                  <Plan />
+                  <div className="relative z-0">
+                    <Contact />
+                    <StarsCanvas />
+                  </div>
+                </>
+              }
+            />
+            <Route path="/works" element={<Works />} />
+          </Routes>
         </div>
       </BrowserRouter>
     </>
