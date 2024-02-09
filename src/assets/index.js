@@ -68,6 +68,7 @@ import bimTeamStCert from "./awards/bimTeamStCert.png";
 import bimStSert from "./awards/bimStSert.png";
 import bimNatTeamSert from "./awards/bimNatTeamSert.png";
 import bimNatSert from "./awards/bimNatSert.png";
+import restCert from "./awards/restCert.png";
 
 export {
   logo,
@@ -134,5 +135,6 @@ export {
   bimStSert,
   bimTeamStCert,
   bimNatTeamSert,
+  restCert,
   link,
 };

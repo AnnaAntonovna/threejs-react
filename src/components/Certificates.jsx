@@ -32,6 +32,7 @@ import {
   bimTeamStCert,
   bimStSert,
   calcSert,
+  restCert,
 } from "./../assets";
 
 const Certificates = () => {
@@ -82,10 +83,13 @@ const Certificates = () => {
           <img src={csharpCert} alt="image_1" />
         </SwiperSlide>
         <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
+          <img src={pythonCert} alt="image_1" />
+        </SwiperSlide>
+        <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
           <img src={webCert} alt="image_1" />
         </SwiperSlide>
         <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
-          <img src={pythonCert} alt="image_1" />
+          <img src={restCert} alt="image_1" />
         </SwiperSlide>
         <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
           <img src={dbCert} alt="image_1" />
@@ -93,6 +97,7 @@ const Certificates = () => {
         <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
           <img src={strucCert} alt="image_1" />
         </SwiperSlide>
+
         <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
           <img src={micCert} alt="image_1" />
         </SwiperSlide>
