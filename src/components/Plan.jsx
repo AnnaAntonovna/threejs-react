@@ -3,6 +3,7 @@ import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
+import { Link } from "react-router-dom";
 
 const Plan = () => {
   const layoutStyle = {
@@ -43,13 +44,6 @@ const Plan = () => {
     height: "50%", // Adjust height based on your needs
   };
 
-  const stairStyle = {
-    border: "1px solid transparent",
-    flex: "1",
-    width: "100%",
-    margin: "2px 0",
-  };
-
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -62,45 +56,61 @@ const Plan = () => {
           className="mt-3 text-warm-brown text-[17px] max-w-3xl leading-[30px]"
         >
           You can pick one or open all - every room is waiting for a guest. Mi
-          casa tu casa 😉.
+          casa tu casa!
         </motion.p>
       </div>
-      <div className="bg-plan-back bg-center bg-contain w-fit h-fit bg-no-repeat">
+      <div className="mt-5 bg-plan-back bg-center bg-contain w-fit h-fit bg-no-repeat">
         <div style={layoutStyle} className="p-4">
           <div style={rowStyle}>
-            <div
+            <Link
+              to="/works"
               style={boxStyle}
-              className="mt-1 h-[148px] border-solid flex border-4 items-center justify-center border-transparent hover:bg-dynamo-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
+              className="mt-1 h-[148px] text-center border-solid flex border-4 items-center justify-center border-transparent hover:bg-dynamo-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
             >
-              Dynamo Scripting (Python + Revit API)
-            </div>
+              Scripts (Python + Revit API)
+            </Link>
             <div></div>
-            <div style={boxStyle} className="mt-1 h-[148px]">
-              C# Plugins (Python + RevitAPI + WPF)
-            </div>
+            <Link
+              to="/works"
+              style={boxStyle}
+              className="mt-1 h-[148px] text-center items-center justify-center border-transparent bg-no-repeat hover:bg-cold-gray hover:bg-plugin-back bg-center bg-cover hover:text-transparent hover:ease-in-out transition duration-100 ease-out cursor-pointer"
+            >
+              C# Plugins (RevitAPI + WPF)
+            </Link>
           </div>
           <div className="h-fit flex flex-1 w-full -mt-2">
-            <div style={tallBoxStyle} className="h-[147px]">
+            <Link
+              to="/works"
+              style={tallBoxStyle}
+              className="h-[147px] hover:bg-bim-back bg-center bg-contain hover:bg-white  bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+            >
               BIM Projects
-              {/* <div style={boxStyle}></div>
-          <div style={boxStyle}></div> */}
-            </div>
+            </Link>
             <div style={tallBoxStyle} className="h-[147px]"></div>
-            <div style={tallBoxStyle} className="h-[147px]">
+            <Link
+              to="/works"
+              style={tallBoxStyle}
+              className="h-[147px] hover:bg-calc-back hover:bg-white bg-center bg-contain bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+            >
               Calculations
-              {/* <div style={boxStyle}></div>
-          <div style={boxStyle}></div> */}
-            </div>
+            </Link>
           </div>
           <div style={rowStyle} className="h-[154px] -mt-3">
-            <div className="h-[154px] w-1/2 border-solid flex border-4 items-center justify-center border-transparent hover:bg-web-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer">
+            <Link
+              to="/works"
+              className="h-[154px] w-1/2 border-solid flex border-4 text-center items-center justify-center border-transparent hover:bg-web-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+            >
               Websites (JavaScript/TypesScript)
-            </div>
+            </Link>
             <div style={boxStyle} className="h-[154px]"></div>
-            <div style={boxStyle} className="h-[154px]">
+            <Link
+              to="/works"
+              style={boxStyle}
+              className="h-[154px] hover:bg-more-back hover:bg-white bg-center bg-cover bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
+            >
               {" "}
               More projects!
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -108,4 +118,4 @@ const Plan = () => {
   );
 };
 
-export default SectionWrapper(Plan, "plan");
+export default SectionWrapper(Plan, "portfolio");

@@ -92,11 +92,8 @@ const Talks = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-warm-brown text-[17px] max-w-3xl leading-[30px]"
         >
-          I really enjoy sharing creative ways to solve tough problems that were
-          almost officially marked as impossible even by Autodesk Developers. I
-          prefer to present these solutions as adventurous journeys rather than
-          diving into heavy theory. It inspires me to explain innovative
-          approaches in a light and accessible manner.
+          It happens that on Autodesk forum something is marked as almost impossible... That's usually a great sign that I can write an article of how I solved the challenge!
+          What might be a better feeling? Well, there's one - to present these solutions in a simple and light manner as adventurous journeys.
         </motion.p>
       </div>
 

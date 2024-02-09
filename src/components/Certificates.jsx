@@ -110,13 +110,13 @@ const Certificates = () => {
         <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
           <img src={dynamoCert} alt="image_1" />
         </SwiperSlide>
-        {/* <SwiperSlide className="h-[500px]  w-[300px]">
+        <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
           <img src={bimNatSert} alt="image_1" />
         </SwiperSlide>
-        <SwiperSlide className="h-[500px] w-[300px]">
+        <SwiperSlide className="max-w-[500px] max-h-[500px] w-fit h-fit">
           <img src={bimNatTeamSert} alt="image_1" />
         </SwiperSlide>
-        <SwiperSlide className="h-[500x]  w-[300px]">
+        {/* <SwiperSlide className="h-[500x]  w-[300px]">
           <img src={bimTeamStCert} alt="image_1" />
         </SwiperSlide>
         <SwiperSlide className="h-[500px]  w-[300px]">

@@ -164,7 +164,7 @@ const experiences = [
     company_name: "Strategie Digitali",
     icon: sd,
     iconBg: "#f0ebeb",
-    date: "February 2022",
+    date: "February 2023",
     points: ["Maybe some pictures? Learn more?"],
   },
   {
@@ -207,7 +207,7 @@ const experiences = [
       "St Petersburg State University of Architecture and Civil Engineering.",
     icon: sd,
     iconBg: "#f0ebeb",
-    date: "July 2022",
+    date: "October 2021",
     points: ["Maybe some pictures? Learn more?"],
   },
   {
@@ -493,4 +493,192 @@ const talks = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, talks };
+const scripts = [
+  {
+    name: "Capital bar reinforcement scripts with UI",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WinForms",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/772KN7DDoj8?si=-WOEJb89N5oBhC_3",
+    video: true,
+  },
+  {
+    name: "Automatization of Revit Reinforcement with DXF",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AutoCAD",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/cFs-5w-FYgQ?si=LfX5W0Wjv752PIkW",
+    video: true,
+  },
+  {
+    name: "Reinforcement of openings in slab shafts",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WinForms",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/ls9d5RRJHcY?si=FX4t6zj071jjewlS",
+    video: true,
+  },
+];
+
+const webProjects = [
+  {
+    name: "IFCjs React application 🔇",
+    description:
+      "IFC models placed on the 3d map with a possibility to check properties of every element even on modeli phone? Yes, yes, already done.",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "THREE.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/63Sm2AdSNVo?si=Q81unfFy_QxswB2z",
+    video: true,
+    github: true,
+  },
+
+  {
+    name: "First steps with THREE.js and openAI API 🔇",
+    description:
+      "Why not to create a 3D T-shirt customizer with AI generating prints? I know it's impressive, but actually it has nothing to do with me. (I simply followed step-by step guide of amazing Adrian from JS Mastery).",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "OpenAI API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "THREE.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/63Sm2AdSNVo?si=Q81unfFy_QxswB2z",
+    video: true,
+    github: true,
+  },
+
+  {
+    name: "annabaranova.com",
+    description:
+      "I love my parents so much that I just really wanted the best project of my parents to get recognized and find a great job",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "OpenAI API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "THREE.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/AnnaAntonovna/threejs-react",
+    src: "https://www.youtube.com/embed/63Sm2AdSNVo?si=Q81unfFy_QxswB2z",
+    video: true,
+    github: true,
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  talks,
+  webProjects,
+  scripts,
+};
