@@ -20,7 +20,7 @@ const Hero = () => {
             duration: 1.0,
             y: [0, 24, 0],
           }}
-          transition={{ delay: 4.5 }}
+          transition={{ delay: 3.2 }}
         >
           <h1 className={`${styles.heroHeadText} maz-w-[500px]`}>
             Hi, it's <span>Anna</span>

@@ -74,7 +74,6 @@ const Navbar = () => {
            hover:text-white text-[18px] 
             font-medium cursor-pointer`}
               onClick={() => handleLinkClick(link)}
-              //onClick={() => setActive(link.title)}
             >
               <button>{link.title}</button>
             </li>
