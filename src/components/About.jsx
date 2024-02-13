@@ -7,8 +7,6 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-import { houseCard, mouseCard, hummerCard } from "../assets";
-
 const ServiceCard = ({ index, title, icon, className }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">

@@ -49,11 +49,6 @@ import rayCasting from "./rayCasting.png";
 import commandChanger from "./commandChanger.png";
 import grass from "./grass.png";
 
-import houseCard from "./cards/house.jpg";
-import hummerCard from "./cards/hummer.png";
-import mouseCard from "./cards/mouse.png";
-import webCard from "./cards/web.png";
-
 import webCert from "./awards/webCert.png";
 import strucCert from "./awards/strucCert.png";
 import pythonCert from "./awards/pythonCert.png";
@@ -114,10 +109,6 @@ export {
   shaftsUI,
   cropRegion,
   ifcjsProject,
-  houseCard,
-  mouseCard,
-  hummerCard,
-  webCard,
   rayCasting,
   commandChanger,
   grass,

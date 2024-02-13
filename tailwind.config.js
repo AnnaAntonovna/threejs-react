@@ -31,7 +31,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
         "mouse-card": "url('/src/assets/cards/mouse.png')",
-        "house-card": "url('/src/assets/cards/house.jpg')",
+        "house-card": "url('/src/assets/cards/house.png')",
         "hummer-card": "url('/src/assets/cards/hummer.png')",
         "web-card": "url('/src/assets/cards/web.png')",
         "back-card": "url('/src/assets/cards/back.png')",
