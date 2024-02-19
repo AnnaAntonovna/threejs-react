@@ -37,6 +37,7 @@ import sd from "./company/sd.png";
 import gasu from "./company/gasu.png";
 import AM from "./company/AM.png";
 import italy from "./company/flag.ico";
+import champlogo from "./company/logoBim.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -100,6 +101,7 @@ export {
   gasu,
   AM,
   italy,
+  champlogo,
   csharp,
   dotnet,
   firebase,
