@@ -65,7 +65,7 @@ const Certificates = () => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        initialSlide={2}
+        initialSlide={3}
         slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 0,
