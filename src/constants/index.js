@@ -36,6 +36,7 @@ import {
   rayCasting,
   commandChanger,
   grass,
+  italy,
 } from "../assets";
 
 export const navLinks = [
@@ -147,30 +148,35 @@ const experiences = [
     iconBg: "#f0ebeb",
     date: "July 2022 - Present",
     points: [
-      "Developed Revit plugins with WPF, tackling complex challenges using advanced tools of Revit API.",
-      "Built and managed digital twin projects using ReactJS, TypeScript, JavaScript, 3JS, and IFCJS, focusing on web-based interactive experiences for IFC models.",
-      "Specialized in Dynamo scripting for automation, streamlining workflows and improving project efficiency.",
-      "Created custom zero nodes in C Sharp, enhancing Dynamo's visual scripting environment.",
-      "Acted as an instructor, teaching Python in Dynamo, sharing expertise through courses and educational content.",
-      "Shared innovative solutions and professional insights on complex technical issues in articles of Research and Development department.",
+      "Developed Revit plugins with WPF, using advanced tools of Revit API.",
+      "Built projects using ReactJS, TypeScript, JavaScript, 3JS, and IFCJS, focusing on IFC models in web.",
+      "Specialized in Dynamo scripting for automation and modeling.",
+      "Created custom zero nodes in C#, enhancing Dynamo's visual scripting environment.",
+      "Acted as an instructor, teaching Python in Dynamo.",
+      "Shared innovative solutions and professional insights on complex technical issues in articles and videos of Research and Development department.",
     ],
   },
   {
     title: "Moving to Italy",
     company_name: "Strategie Digitali",
-    icon: sd,
+    icon: italy,
     iconBg: "#f0ebeb",
-    date: "February 2023",
-    points: ["Maybe some pictures? Learn more?"],
+    date: "July 2022-February 2023",
+    points: [
+      "To find a job in European Union while making a dimploma project in Russia? In 2022? Handling any bureaucratic obstacle while remotely working in 5 different countries?",
+      "It was such a big deal - I was invited as a guest to the professional podcast by my student-time professional idol!",
+    ],
   },
   {
-    title: "Graduation!",
+    title: "Revit: Structure Teacher",
     company_name:
-      "St Petersburg State University of Architecture and Civil Engineering.",
-    icon: sd,
-    iconBg: "#f0ebeb",
-    date: "July 2022",
-    points: ["Maybe some pictures? Learn more?"],
+      "St Petersburg State University of Architecture and Civil Engineering. Part-time.",
+    icon: gasu,
+    iconBg: "#E6DEDD",
+    date: "January 2022 - May 2022",
+    points: [
+      "As the best student structural BIM engineer in Russia and a national BIM champion, I was invited to teach a course on Revit structures at my university while pursuing my studies. In this role, I instructed fellow student engineers on using Revit for structural and civil engineering, including integration with calculation programs and working with analytical models.",
+    ],
   },
   {
     title: "BIM Engineer Intern",
@@ -187,24 +193,16 @@ const experiences = [
     ],
   },
   {
-    title: "Revit: Structure Teacher",
-    company_name:
-      "St Petersburg State University of Architecture and Civil Engineering. Part-time.",
-    icon: gasu,
-    iconBg: "#E6DEDD",
-    date: "January 2022 - May 2022",
-    points: [
-      "As the best student structural BIM engineer in Russia and a national BIM champion, I was invited to teach a course on Revit structures at my university while pursuing my studies. In this role, I instructed fellow student engineers on using Revit for structural and civil engineering, including integration with calculation programs and working with analytical models.",
-    ],
-  },
-  {
     title: "Winning National BIM championship!",
     company_name:
-      "St Petersburg State University of Architecture and Civil Engineering.",
+      "St Petersburg State University of Architecture and Civil Engineering",
     icon: sd,
     iconBg: "#f0ebeb",
     date: "October 2021",
-    points: ["Maybe some pictures? Learn more?"],
+    points: [
+      "In a team with the brightest specialists of 8 other departments, we created a BIM project that won the 1 first place in the national championship.",
+      "The first place between copmetitors of my department was also taken by me!",
+    ],
   },
   {
     title: "Junior Civil Engineer",

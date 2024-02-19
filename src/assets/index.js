@@ -36,6 +36,7 @@ import RC from "./company/RC.png";
 import sd from "./company/sd.png";
 import gasu from "./company/gasu.png";
 import AM from "./company/AM.png";
+import italy from "./company/flag.ico";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -98,6 +99,7 @@ export {
   sd,
   gasu,
   AM,
+  italy,
   csharp,
   dotnet,
   firebase,
