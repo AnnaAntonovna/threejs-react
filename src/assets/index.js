@@ -67,6 +67,9 @@ import bimNatTeamSert from "./awards/bimNatTeamSert.png";
 import bimNatSert from "./awards/bimNatSert.png";
 import restCert from "./awards/restCert.png";
 
+import me from "./me.jpeg";
+import gmail from "./gmail.png";
+
 export {
   logo,
   backend,
@@ -132,4 +135,6 @@ export {
   bimNatTeamSert,
   restCert,
   link,
+  me,
+  gmail,
 };

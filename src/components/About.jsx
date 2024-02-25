@@ -1,6 +1,7 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import { me } from "../assets";
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -12,7 +13,7 @@ const ServiceCard = ({ index, title, icon, className }) => {
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-[250px] green-pink-gradient p-[1px] 
+        className="w-[250px] 
         rounded-[20px] shadow-card text-transparent hover:text-white focus:text-white focus:ease-in hover:ease-in transition duration-150 ease-out"
       >
         <div
@@ -48,17 +49,21 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", "0.1", 1)}
         className="mt-4 text-warm-brown text-[17px]
-      max-w-3xl leading-[30px]"
+      max-w-3xl leading-[30px] xs:flex"
       >
+        <img
+          src={me}
+          alt={"me"}
+          className="mr-[50px] xs:ml-[6px] xs:max-w-[250px] xs:h-[300px] mb-[50px] xs:mb-[0px]"
+        />
         As a student, I achieved the title of Best BIM Structural Engineer in a
         national BIM championship. During my time at Renaissance Construction,
-        an international corporation responsible for Europe's tallest
-        skyscraper, I initiated and executed a successful rebar automation
-        project using Python, Revit API, and Dynamo. After graduation, I
-        relocated to Europe on my own and expanded my automation skills in C#,
-        WPF, JavaScript, IFC in web.
-        <br />I am excited about the possibilities ahead and eager to discover
-        new horizons in the world of BIM!
+        an international corporation that built Europe's tallest skyscraper, I
+        initiated and executed a successful rebar automation project using
+        Python, Revit API, and Dynamo. After graduation, I relocated to Europe
+        and expanded my automation skills in C#, WPF, JavaScript, IFC in web,
+        being a part of Research and Development department.
+        <br />I am excited to discover new horizons in the world of BIM!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

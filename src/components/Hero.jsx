@@ -3,8 +3,12 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-fit xs:h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[200px] max-w-7xl mx-auto 
       flex flex-row items-start gap-5 z-20 h-[180px]`}
@@ -30,14 +34,30 @@ const Hero = () => {
           </p>
         </motion.div>
       </div>
-      <ComputersCanvas />
+      {width > 450 ? (
+        <ComputersCanvas />
+      ) : (
+        <div className="flex-col w-screen h-screen">
+          <iframe
+            width="450"
+            height="699"
+            className="mt-[70px]"
+            src="https://www.youtube.com/embed/H6RLb0WTmzI?autoplay=1&mute=1&controls=0&loop=1controls=0&start=8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      )}
+
       <div
         className="absolute xs:bottom-10 bottom-32 w-full 
       flex justify-center items-center"
       >
         <a href="#about">
           <div
-            className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary 
+            className="w-[35px] h-[64px] rounded-3xl border-4 border-navy xs:border-secondary 
           flex justify-center items-start p-2"
           >
             <motion.dev
@@ -49,7 +69,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
+              className="w-3 h-3 rounded-full bg-navy xs:bg-secondary mb-1"
             />
           </div>
         </a>

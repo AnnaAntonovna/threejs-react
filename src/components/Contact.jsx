@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
+import { link, gmail, github } from "../assets";
+
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -62,10 +64,40 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-warm-gray p-8 rounded-2xl"
+        className="flex-[0.75] bg-navy p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className="sm:text-[18px] text-[14px] text-cold-gray uppercase tracking-wider">
+          Get in touch
+        </p>
+        <h3 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] mb-[10px]">
+          Contact.
+        </h3>
+        <div className="flex">
+          <img
+            src={link}
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/baranovaanna/", "_blank")
+            }
+            alt="linkedIn"
+            className="w-[40px] h-[40px] object-contain cursor-pointer mr-[20px]"
+          />
+
+          <img
+            src={gmail}
+            onClick={() => window.open("annabaranova.edu@gmail.com", "_blank")}
+            alt="annabaranova.edu@gmail.com"
+            className="w-[33px] h-[33px] object-contain cursor-pointer mr-[20px]"
+          />
+
+          <img
+            src={github}
+            onClick={() =>
+              window.open("https://github.com/AnnaAntonovna", "_blank")
+            }
+            alt="gitHub"
+            className="w-[40px] h-[40px] object-contain cursor-pointer"
+          />
+        </div>
 
         <form
           ref={formRef}
@@ -80,8 +112,8 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-cold-gray py-4 px-6 placeholder:text-secondary
-            text-white rounded-lg outlined-none
+              className="bg-cold-gray py-4 px-6 placeholder:text-primary
+            text-primary rounded-lg outlined-none
             border-none font-medium"
             />
           </label>
@@ -94,8 +126,8 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className="bg-cold-gray py-4 px-6 placeholder:text-secondary
-            text-white rounded-lg outlined-none
+              className="bg-cold-gray py-4 px-6 placeholder:text-primary
+            text-primary rounded-lg outlined-none
             border-none font-medium"
             />
           </label>
@@ -108,8 +140,8 @@ const Contact = () => {
               name="message"
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-cold-gray py-4 px-6 placeholder:text-secondary
-            text-white rounded-lg outlined-none
+              className="bg-cold-gray py-4 px-6 placeholder:text-primary
+            text-primary rounded-lg outlined-none
             border-none font-medium"
             />
           </label>

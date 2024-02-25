@@ -7,7 +7,7 @@ import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState("false");
+  const [toggle, setToggle] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -88,7 +88,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
           <div
-            className={`${!toggle ? "hidden" : "flex"} p-6 black-gradient
+            className={`${!toggle ? "hidden" : "flex"} p-6 bg-navy
         absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul
