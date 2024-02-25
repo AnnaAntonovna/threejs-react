@@ -17,6 +17,11 @@ const Contact = () => {
     message: "",
   });
 
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -84,7 +89,7 @@ const Contact = () => {
 
           <img
             src={gmail}
-            onClick={() => window.open("annabaranova.edu@gmail.com", "_blank")}
+            onClick={() => alert("Email: annabaranova.edu@gmail.com")}
             alt="annabaranova.edu@gmail.com"
             className="w-[33px] h-[33px] object-contain cursor-pointer mr-[20px]"
           />
@@ -157,12 +162,16 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
+      {width > 450 ? (
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <EarthCanvas />
+        </motion.div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

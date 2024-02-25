@@ -16,9 +16,15 @@ import Certificates from "./components/Certificates";
 import Plan from "./components/Plan";
 
 const App = () => {
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+  if (isAndroid) {
+    window.location = "https://622e12a76c242.site123.me/";
+  }
   return (
     <>
       <Sugar
+        className="text-black"
         time={1000}
         background="#f2f2f2"
         color={"#003366"}
