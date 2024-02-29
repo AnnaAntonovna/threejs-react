@@ -38,6 +38,9 @@ import {
   grass,
   italy,
   champlogo,
+  youtube,
+  calcs,
+  anna,
 } from "../assets";
 
 export const navLinks = [
@@ -270,9 +273,10 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://youtu.be/772KN7DDoj8",
     src: "https://www.youtube.com/embed/772KN7DDoj8?si=-WOEJb89N5oBhC_3",
     video: true,
+    github: false,
   },
   {
     name: "Automatization of Revit Reinforcement with DXF",
@@ -296,9 +300,10 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://youtu.be/cFs-5w-FYgQ",
     src: "https://www.youtube.com/embed/cFs-5w-FYgQ?si=LfX5W0Wjv752PIkW",
     video: true,
+    github: false,
   },
   {
     name: "Reinforcement of openings in slab shafts",
@@ -322,9 +327,10 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/ls9d5RRJHcY?si=FX4t6zj071jjewlS",
+    source_code_link: "https://youtu.be/ECcn3_cnxdE",
+    src: "https://www.youtube.com/embed/ECcn3_cnxdE?si=nMIm3X1Dueh3EkPt",
     video: true,
+    github: false,
   },
 
   {
@@ -512,9 +518,10 @@ const scripts = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://youtu.be/772KN7DDoj8",
     src: "https://www.youtube.com/embed/772KN7DDoj8?si=-WOEJb89N5oBhC_3",
     video: true,
+    github: false,
   },
   {
     name: "Automatization of Revit Reinforcement with DXF",
@@ -538,9 +545,10 @@ const scripts = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://youtu.be/cFs-5w-FYgQ",
     src: "https://www.youtube.com/embed/cFs-5w-FYgQ?si=LfX5W0Wjv752PIkW",
     video: true,
+    github: false,
   },
   {
     name: "Reinforcement of openings in slab shafts",
@@ -564,9 +572,10 @@ const scripts = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/ls9d5RRJHcY?si=FX4t6zj071jjewlS",
+    source_code_link: "https://youtu.be/ECcn3_cnxdE",
+    src: "https://www.youtube.com/embed/ECcn3_cnxdE?si=nMIm3X1Dueh3EkPt",
     video: true,
+    github: false,
   },
 ];
 
@@ -635,7 +644,7 @@ const webProjects = [
     github: true,
   },
 
-  {
+  /* {
     name: "annabaranova.com",
     description:
       "I love my parents so much that I just really wanted the best project of my parents to get recognized and find a great job",
@@ -662,13 +671,31 @@ const webProjects = [
       },
     ],
     source_code_link: "https://github.com/AnnaAntonovna/threejs-react",
-    src: "https://www.youtube.com/embed/63Sm2AdSNVo?si=Q81unfFy_QxswB2z",
-    video: true,
+    src: { anna },
+    video: false,
     github: true,
-  },
+  }, */
 ];
 
 const cSharp = [
+  {
+    name: "Beatiful banch of tools 🔇",
+    description: "Shortly, silently, an assorty of one-conept Revit tools",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/99G8M0cRpsA?si=_nC9iv1lStNQOFOu",
+    video: true,
+    github: false,
+  },
   {
     name: "DEMO: Revit Families in a Web Library with IFC.js 🔇",
     description:
@@ -696,24 +723,6 @@ const cSharp = [
       },
       {
         name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-    ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
-    video: true,
-    github: false,
-  },
-  {
-    name: "All the tools 🔇",
-    description: "",
-    tags: [
-      {
-        name: "C#",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Revit API",
         color: "blue-text-gradient",
       },
     ],
@@ -777,7 +786,7 @@ const BIMprojects = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://youtu.be/Ii-BvNykBV4?si=yNLqOV2f_kT8FkFN",
     src: "https://www.youtube.com/embed/Ii-BvNykBV4?si=t_mSCaRsakZ8rDUv",
     video: true,
     github: false,
@@ -804,15 +813,14 @@ const BIMprojects = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
+    source_code_link: "https://youtu.be/PTK3IIjiKeA",
+    src: "https://www.youtube.com/embed/PTK3IIjiKeA?si=dctMGu4cjdnx5opK",
     video: true,
     github: false,
   },
   {
     name: "Automatization of Revit Reinforcement with DXF",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    description: "",
     tags: [
       {
         name: "Python",
@@ -838,8 +846,8 @@ const BIMprojects = [
 ];
 
 const Calculations = [
-  {
-    name: "Just a picture of diploma!",
+  /* {
+    name: "ETABS Calculations",
     description: "",
     tags: [
       {
@@ -867,11 +875,12 @@ const Calculations = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
-    video: true,
+    source_code_link:
+      "https://622e12a76c242.site123.me/portfolio-1/calculation-projects",
+    src: calcs,
+    video: false,
     github: false,
-  },
+  }, */
   {
     name: "National BIM Championship full-cycle🔇",
     description:
@@ -898,7 +907,7 @@ const Calculations = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
+    source_code_link: "https://youtu.be/Ii-BvNykBV4?si=yNLqOV2f_kT8FkFN",
     src: "https://www.youtube.com/embed/Ii-BvNykBV4?si=t_mSCaRsakZ8rDUv",
     video: true,
     github: false,
@@ -925,8 +934,8 @@ const Calculations = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
+    source_code_link: "https://youtu.be/PTK3IIjiKeA",
+    src: "https://www.youtube.com/embed/PTK3IIjiKeA?si=dctMGu4cjdnx5opK",
     video: true,
     github: false,
   },

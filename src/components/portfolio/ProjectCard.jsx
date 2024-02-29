@@ -1,7 +1,7 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
-import { github } from "../../assets";
+import { githubicon, youtube } from "../../assets";
 import { fadeIn, textVariant } from "../../utils/motion";
 
 export const ProjectCard = ({
@@ -13,9 +13,10 @@ export const ProjectCard = ({
   source_code_link,
   src,
   video,
+  github,
 }) => {
   const showVideo = video;
-  console.log(showVideo);
+  const showgit = github;
   return (
     <motion.div>
       <div className="bg-navy p-5 rounded-2xl sm:w-[480px] w-full">
@@ -43,10 +44,14 @@ export const ProjectCard = ({
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
             onClick={() => window.open(source_code_link, "_blank")}
-            className="z-30 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
+            className={
+              showgit
+                ? "z-30 black-gradient w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
+                : "z-30 bg-white w-10 h-10 rounded-full flex justify-center items-center cursos-pointer"
+            }
           >
             <img
-              src={github}
+              src={showgit ? githubicon : youtube}
               alt="github"
               className="w-1/2 h-1/2 object-contain"
             />

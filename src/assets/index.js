@@ -3,6 +3,7 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import githubicon from "./github.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -50,6 +51,8 @@ import ifcjsProject from "./ifcjsProject.png";
 import rayCasting from "./rayCasting.png";
 import commandChanger from "./commandChanger.png";
 import grass from "./grass.png";
+import calcs from "./calcs.png";
+import anna from "./anna.png";
 
 import webCert from "./awards/webCert.png";
 import strucCert from "./awards/strucCert.png";
@@ -69,6 +72,7 @@ import restCert from "./awards/restCert.png";
 
 import me from "./me.jpeg";
 import gmail from "./gmail.png";
+import youtube from "./youtube.png";
 
 export {
   logo,
@@ -77,6 +81,7 @@ export {
   mobile,
   web,
   github,
+  githubicon,
   menu,
   close,
   css,
@@ -137,4 +142,7 @@ export {
   link,
   me,
   gmail,
+  youtube,
+  calcs,
+  anna,
 };
