@@ -1,14 +1,10 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { Navigate } from "react-router-dom";
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects, scripts, webProjects, cSharp } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { github } from "../../assets";
+import { fadeIn, textVariant } from "../../utils/motion";
 
-const ProjectCard = ({
+export const ProjectCard = ({
   index,
   name,
   description,
@@ -79,22 +75,3 @@ const ProjectCard = ({
     </motion.div>
   );
 };
-
-const Works = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My projects</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-warm-brown text-[17px] max-w-3xl leading-[30px]"
-        ></motion.p>
-      </div>
-    </>
-  );
-};
-
-export default SectionWrapper(Works, "portfolio");

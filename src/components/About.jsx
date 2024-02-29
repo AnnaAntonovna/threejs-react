@@ -14,7 +14,7 @@ const ServiceCard = ({ index, title, icon, className }) => {
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className="w-[250px] 
-        rounded-[20px] shadow-card text-transparent hover:text-white focus:text-white focus:ease-in hover:ease-in transition duration-150 ease-out"
+        rounded-[20px] shadow-card bg-navy text-transparent hover:text-white focus:text-white focus:ease-in hover:ease-in transition duration-150 ease-out"
       >
         <div
           options={{

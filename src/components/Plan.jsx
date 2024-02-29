@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Plan = () => {
+  const [active, setActive] = useState("");
+  const navigate = useNavigate();
+
   const layoutStyle = {
     display: "flex",
     flexDirection: "column",
@@ -15,6 +18,42 @@ const Plan = () => {
     width: "580px", // You can adjust the width as needed
     boxSizing: "border-box",
   };
+
+  //WE NEED TO USE THIS!
+  /* const section = document.getElementById(link.id);
+  section && section.scrollIntoView({ behavior: "smooth" });
+  window.location.href = `/#${link.id}`; */
+  const handleLinkClick = (link) => {
+    // If we're not on the home page, navigate to the home page first
+    setTimeout(() => {
+      navigate("/works");
+    }, 300);
+
+    console.log("navigated to /works");
+
+    setTimeout(() => {
+      const section = document.getElementById(link);
+      section && section.scrollIntoView({ behavior: "smooth" });
+      window.location.href = `/works${link}`;
+      console.log(window.location.href);
+    }, 300);
+
+    //navigate("/works", { state: { sectionId: link.id } });
+
+    console.log("navigated to #");
+  };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const { hash } = location;
+    if (hash) {
+      const section = document.getElementById(hash.replace("#", ""));
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   const rowStyle = {
     display: "flex",
@@ -63,7 +102,7 @@ const Plan = () => {
         <div style={layoutStyle} className="p-4">
           <div style={rowStyle}>
             <Link
-              to="/works"
+              to="/works#dynamo"
               style={boxStyle}
               className="mt-1 h-[148px] text-center border-solid flex border-4 items-center justify-center border-transparent hover:bg-dynamo-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
             >
@@ -71,7 +110,8 @@ const Plan = () => {
             </Link>
             <div></div>
             <Link
-              to="/works"
+              to="/works#csharp"
+              onClick={() => handleLinkClick("#csharp")}
               style={boxStyle}
               className="mt-1 h-[148px] text-center items-center justify-center border-transparent bg-no-repeat hover:bg-cold-gray hover:bg-plugin-back bg-center bg-cover hover:text-transparent hover:ease-in-out transition duration-100 ease-out cursor-pointer"
             >
@@ -80,7 +120,8 @@ const Plan = () => {
           </div>
           <div className="h-fit flex flex-1 w-full -mt-2">
             <Link
-              to="/works"
+              to="/works#bimprojects"
+              onClick={() => handleLinkClick("#bimprojects")}
               style={tallBoxStyle}
               className="h-[147px] hover:bg-bim-back bg-center bg-contain hover:bg-white  bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
             >
@@ -88,7 +129,8 @@ const Plan = () => {
             </Link>
             <div style={tallBoxStyle} className="h-[147px]"></div>
             <Link
-              to="/works"
+              to="/works#calculation"
+              onClick={() => handleLinkClick("#calculation")}
               style={tallBoxStyle}
               className="h-[147px] hover:bg-calc-back hover:bg-white bg-center bg-contain bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
             >
@@ -97,7 +139,8 @@ const Plan = () => {
           </div>
           <div style={rowStyle} className="h-[154px] -mt-3">
             <Link
-              to="/works"
+              to="/works#web"
+              onClick={() => handleLinkClick("#web")}
               className="h-[154px] w-1/2 border-solid flex border-4 text-center items-center justify-center border-transparent hover:bg-web-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
             >
               Websites (JavaScript/TypesScript)

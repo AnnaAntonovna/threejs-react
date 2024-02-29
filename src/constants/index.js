@@ -49,10 +49,10 @@ export const navLinks = [
     id: "experience",
     title: "Experience",
   },
-  /* {
+  {
     id: "portfolio",
     title: "Portfolio",
-  }, */
+  },
   {
     id: "contact",
     title: "Contact",
@@ -64,25 +64,25 @@ const services = [
     title: "Revit API Developer",
     icon: mobile,
     className:
-      "bg-house-card bg-cover bg-no-repeat bg-center hover:bg-house-back-card rounded-[20px] py-5 px-12 min-w-[248px] h-[370px] flex justify-evenly items-center flex-col",
+      "bg-house-card bg-cover bg-no-repeat bg-center bg-navy hover:bg-house-back-card rounded-[20px] py-5 px-12 min-w-[248px] h-[370px] flex justify-evenly items-center flex-col",
   },
   {
     title: "BIM Specialist",
     icon: backend,
     className:
-      "bg-mouse-card bg-cover bg-no-repeat bg-center hover:bg-mouse-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
+      "bg-mouse-card bg-cover bg-no-repeat bg-center bg-navy hover:bg-mouse-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
   },
   {
     title: "Web Enthusiast",
     icon: web,
     className:
-      "bg-web-card bg-cover bg-no-repeat bg-center hover:bg-web-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
+      "bg-web-card bg-cover bg-no-repeat bg-center bg-navy hover:bg-web-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
   },
   {
     title: "Structural Engineer",
     icon: creator,
     className:
-      "bg-hummer-card bg-cover bg-no-repeat bg-center hover:bg-hummer-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
+      "bg-hummer-card bg-cover bg-no-repeat bg-center bg-navy hover:bg-hummer-back-card rounded-[20px] py-5 px-12 h-[370px] flex justify-evenly items-center flex-col",
   },
 ];
 
@@ -150,7 +150,7 @@ const experiences = [
     date: "July 2022 - Present",
     points: [
       "Developed Revit plugins with WPF, using advanced tools of Revit API.",
-      "Built projects using ReactJS, TypeScript, JavaScript, 3JS, and IFCJS, focusing on IFC models in web.",
+      "Built projects using React.js, TypeScript, JavaScript,THREE.js, and IFC.js, focusing on IFC models in web.",
       "Created Dynamo scripts for automation and modeling.",
       "Created custom zero nodes in C#, enhancing Dynamo's visual scripting environment.",
       "Acted as an instructor, teaching Python in Dynamo.",
@@ -668,6 +668,270 @@ const webProjects = [
   },
 ];
 
+const cSharp = [
+  {
+    name: "DEMO: Revit Families in a Web Library with IFC.js 🔇",
+    description:
+      "A little experiment of Web implementation into revit without using Forge.",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WebView2",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "IFC.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
+    video: true,
+    github: false,
+  },
+  {
+    name: "All the tools 🔇",
+    description: "",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
+    video: true,
+    github: false,
+  },
+  {
+    name: "Revit Plugin: Style Crop Region 🔇",
+    description: "",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/wEYd5oMvrXA?si=GCup6IWfgrVycygf",
+    video: true,
+    github: false,
+  },
+];
+
+const BIMprojects = [
+  {
+    name: "National BIM Championship full-cycle🔇",
+    description:
+      "Starting from architectural draft to a model with structures fully calculated. The whole project was done by me in 5 working days, this was possible due to pre-made templates and scripts.",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/Ii-BvNykBV4?si=t_mSCaRsakZ8rDUv",
+    video: true,
+    github: false,
+  },
+  {
+    name: "Qualifying BIM Championship full-cycle",
+    description:
+      "Qualifying BIM Championship full-cycle: modeling, calculations, modeling according to calculations",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AutoCAD",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
+    video: true,
+    github: false,
+  },
+  {
+    name: "Automatization of Revit Reinforcement with DXF",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AutoCAD",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/cFs-5w-FYgQ?si=LfX5W0Wjv752PIkW",
+    video: true,
+  },
+];
+
+const Calculations = [
+  {
+    name: "Just a picture of diploma!",
+    description: "",
+    tags: [
+      {
+        name: "ETABS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AutoCAD",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
+    video: true,
+    github: false,
+  },
+  {
+    name: "National BIM Championship full-cycle🔇",
+    description:
+      "Starting from architectural draft to a model with structures fully calculated. The whole project was done by me in 5 working days, this was possible due to pre-made templates and scripts.",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/Ii-BvNykBV4?si=t_mSCaRsakZ8rDUv",
+    video: true,
+    github: false,
+  },
+  {
+    name: "Qualifying BIM Championship full-cycle",
+    description:
+      "Qualifying BIM Championship full-cycle: modeling, calculations, modeling according to calculations",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AutoCAD",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
+    video: true,
+    github: false,
+  },
+];
+
 export {
   services,
   technologies,
@@ -677,4 +941,7 @@ export {
   talks,
   webProjects,
   scripts,
+  cSharp,
+  BIMprojects,
+  Calculations,
 };
