@@ -33,6 +33,19 @@ const Hero = () => {
             I develop BIM plugins, web-applications and automate AEC processes.
           </p>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            duration: 1.0,
+            y: [0, 24, 0],
+          }}
+          transition={{ delay: 4.2 }}
+        >
+          <p className={`${styles.heroSubText} mt-2 max-w-[500px]`}>
+            *And you can move the 3D office in the background.
+          </p>
+        </motion.div>
       </div>
       {width > 450 ? (
         <ComputersCanvas />

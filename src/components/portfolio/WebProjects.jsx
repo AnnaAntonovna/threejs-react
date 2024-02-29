@@ -8,24 +8,19 @@ import { webProjects } from "../../constants";
 import { fadeIn, textVariant } from "../../utils/motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Pagination,
-  Navigation,
-  EffectCoverflow,
-  Autoplay,
-} from "swiper/modules";
+import { Pagination, Navigation, EffectCards, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/css/effect-coverflow";
+import "swiper/css/effect-cards";
 
 const WebProject = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My projects</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>My web projects</p>
+        <h2 className={styles.sectionHeadText}>WEB projects.</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
@@ -41,7 +36,7 @@ const WebProject = () => {
       </div> */}
 
       <Swiper
-        modules={[Pagination, Navigation, EffectCoverflow, Autoplay]}
+        modules={[Pagination, Navigation, EffectCards, Autoplay]}
         autoplay={true}
         pagination={{
           dynamicBullets: true,
@@ -53,19 +48,12 @@ const WebProject = () => {
           prevEl: ".swiper-button-prev",
           clickable: true,
         }}
-        effect={"coverflow"}
+        effect={"cards"}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
         initialSlide={0}
         slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2,
-          slideShadows: true,
-        }}
         className="mt-[50px] max-w-[screen] max-h-screen w-full mySwiper text-navy flex place-self-center"
       >
         <div className="mt-20 flex flex-wrap gap-10">

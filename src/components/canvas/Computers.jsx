@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
@@ -22,7 +22,6 @@ const Computers = ({ isMobile }) => {
       actions.Animation.play(); // Play the 'Animation' action if it exists
       console.log("animation is played");
       done = true;
-      console.log("Done should be changes");
     }
   }, [actions.Animation]);
 
@@ -51,6 +50,7 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const canvasRef = useRef();
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -64,6 +64,33 @@ const ComputersCanvas = () => {
 
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleContextLost = (e) => {
+      e.preventDefault();
+      alert("WebGL context lost. Reloading the page.");
+      window.location.reload();
+    };
+
+    const canvasElement = canvasRef.current?.gl.domElement;
+    if (canvasElement) {
+      canvasElement.addEventListener(
+        "webglcontextlost",
+        handleContextLost,
+        false
+      );
+    }
+
+    return () => {
+      if (canvasElement) {
+        canvasElement.removeEventListener(
+          "webglcontextlost",
+          handleContextLost,
+          false
+        );
+      }
     };
   }, []);
 

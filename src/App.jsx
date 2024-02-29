@@ -32,7 +32,7 @@ const App = () => {
     // Set a timeout for the estimated loading duration of the Hero component
     const timer = setTimeout(() => {
       setHeroLoading(false);
-    }, 1800); // Adjust the time (5000ms = 5 seconds) as needed
+    }, 1300); // Adjust the time (5000ms = 5 seconds) as needed
 
     // Clear the timer if the component unmounts
     return () => clearTimeout(timer);
@@ -46,14 +46,12 @@ const App = () => {
 
   return (
     <>
-      {heroLoading && (
-        <Sugar
-          background="#f2f2f2"
-          customLoading={heroLoading}
-          color={"#003366"}
-          animation="slide"
-        />
-      )}
+      <Sugar
+        background="#f2f2f2"
+        customLoading={heroLoading}
+        color={"#003366"}
+        animation="slide"
+      />
       <BrowserRouter>
         <div className="relative z-0 bg-cold-gray">
           <div className="bg-cold-gray">

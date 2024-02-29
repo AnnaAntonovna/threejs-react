@@ -17,7 +17,7 @@ import "swiper/css/effect-cards";
 const Dynamo = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="mt-[50px]">
         <p className={styles.sectionSubText}>How about some Python?</p>
         <h2 className={styles.sectionHeadText}>Dynamo Scripts.</h2>
       </motion.div>
@@ -52,10 +52,7 @@ const Dynamo = () => {
         loop={true}
         initialSlide={0}
         slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: true,
-          slideShadows: true,
-        }}
+        CardsEffect={{}}
         className="mt-[50px] max-w-[screen] max-h-screen w-full mySwiper text-navy flex place-self-center"
       >
         <div className="mt-20 flex flex-wrap gap-10">
@@ -73,7 +70,6 @@ const Dynamo = () => {
           <div class="swiper-button-next">
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </div>
-          {/* <div class="swiper-pagination"></div> */}
         </div>
       </Swiper>
     </>
