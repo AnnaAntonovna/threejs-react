@@ -17,15 +17,8 @@ export const ProjectCard = ({
   const showVideo = video;
   console.log(showVideo);
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        optioins={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-navy p-5 rounded-2xl sm:w-[480px] w-full"
-      >
+    <motion.div>
+      <div className="bg-navy p-5 rounded-2xl sm:w-[480px] w-full">
         <div className="z-20 relative w-full h-[240px]">
           {showVideo ? (
             <iframe
@@ -71,7 +64,7 @@ export const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };

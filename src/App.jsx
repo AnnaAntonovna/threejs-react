@@ -1,12 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState, lazy } from "react";
 import {
   About,
-  Contact,
   Experience,
   Hero,
   Navbar,
-  Tech,
-  Works,
   StarsCanvas,
   Dynamo,
   CSharp,
@@ -14,30 +12,48 @@ import {
   Calculations,
   WebProjects,
 } from "./components";
-import { useEffect, useState } from "react";
 import Sugar from "react-preloaders/lib/Sugar/Sugar";
-import Talks from "./components/Talks";
-import Certificates from "./components/Certificates";
-import Plan from "./components/Plan";
 
+const Contact = lazy(() => import("./components/Contact"));
+const Certificates = lazy(() => import("./components/Certificates"));
+const Talks = lazy(() => import("./components/Talks"));
+const Plan = lazy(() => import("./components/Plan"));
+const Tech = lazy(() => import("./components/Tech"));
 const App = () => {
   var ua = navigator.userAgent.toLowerCase();
   var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
   if (isAndroid) {
     //window.location = "https://622e12a76c242.site123.me/";
   }
+
+  const [heroLoading, setHeroLoading] = useState(true);
+
+  useEffect(() => {
+    // Set a timeout for the estimated loading duration of the Hero component
+    const timer = setTimeout(() => {
+      setHeroLoading(false);
+    }, 1800); // Adjust the time (5000ms = 5 seconds) as needed
+
+    // Clear the timer if the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
+  const onHeroLoaded = () => {
+    setHeroLoading(false);
+
+    console.log("Hero loaded");
+  };
+
   return (
     <>
-      {/* <Sugar
-        className="text-black"
-        time={1000}
-        background="#f2f2f2"
-        color={"#003366"}
-        animation="slide"
-        loop={true} // Loop mode enabled
-        slidesPerView={3} // Adjust this to the number of slides you have if it's less than 3
-        slidesPerGroup={1} // Adjust this as needed
-      /> */}
+      {heroLoading && (
+        <Sugar
+          background="#f2f2f2"
+          customLoading={heroLoading}
+          color={"#003366"}
+          animation="slide"
+        />
+      )}
       <BrowserRouter>
         <div className="relative z-0 bg-cold-gray">
           <div className="bg-cold-gray">

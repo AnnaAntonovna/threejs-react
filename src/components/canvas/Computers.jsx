@@ -1,23 +1,31 @@
-import {Suspense, useEffect, useState} from 'react';
-import { Canvas, } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF, useAnimations } from '@react-three/drei';
-import { Bloom, EffectComposer, } from '@react-three/postprocessing'
+import { Suspense, useEffect, useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import {
+  OrbitControls,
+  Preload,
+  useGLTF,
+  useAnimations,
+} from "@react-three/drei";
+import { Bloom, EffectComposer } from "@react-three/postprocessing";
 
-import CanvasLoader from '../Loader';
+import CanvasLoader from "../Loader";
 
-const Computers = ({isMobile}) => {
-  const computer = useGLTF('./scene/scene.gltf');
-  const { scene, animations } = useGLTF('./scene/scene.gltf');
+export let done = false;
+
+const Computers = ({ isMobile }) => {
+  const computer = useGLTF("./scene/scene.gltf");
+  const { scene, animations } = useGLTF("./scene/scene.gltf");
   const { actions, ref } = useAnimations(animations);
 
   useEffect(() => {
     if (actions.Animation) {
       actions.Animation.play(); // Play the 'Animation' action if it exists
-      console.log("animation is played")
+      console.log("animation is played");
+      done = true;
+      console.log("Done should be changes");
     }
   }, [actions.Animation]);
 
-  
   return (
     <group ref={ref}>
       <hemisphereLight intensity={0.45} groundColor="black" />
@@ -38,55 +46,59 @@ const Computers = ({isMobile}) => {
         rotation={[0, 1.6, 0]}
       />
     </group>
-  )
-}
+  );
+};
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() =>{
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-    }
+    };
 
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
 
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
-    }
-  }, [])
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <Canvas
       frameLoop="demand"
       shadows
       //camera={{position: [15, 14, 4], fov: 25 }}
-      camera={{position: [20, 6, 6], fov: 15 }}
-      
-      gl={{preserveDrawingBuffer: true}}
+      camera={{ position: [20, 6, 6], fov: 15 }}
+      gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader />}> 
-        <OrbitControls 
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI/2}
-          minPolarAngle={Math.PI/2}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
           target={[10, -0.26, 3.1]}
-          />
-          <Computers isMobile={isMobile}/>
+        />
+        <Computers isMobile={isMobile} />
       </Suspense>
-      try{
-      <EffectComposer>
-        <Bloom luminanceThreshold={0.7} luminanceSmoothing={0.9} height={300} />
-      </EffectComposer>
-} catch{} 
-      <Preload all/>
+      {/* try
+      {
+        <EffectComposer>
+          <Bloom
+            luminanceThreshold={0.7}
+            luminanceSmoothing={0.9}
+            height={300}
+          />
+        </EffectComposer>
+      }{" "}
+      catch{} */}
+      <Preload all />
     </Canvas>
-  )
-}
-
+  );
+};
 
 export default ComputersCanvas;
 //export default Computers;

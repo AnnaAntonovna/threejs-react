@@ -34,11 +34,11 @@ const WebProject = () => {
         ></motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      {/* <div className="mt-20 flex flex-wrap gap-10">
         {webProjects.map((webProject, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...webProject} />
         ))}
-      </div>
+      </div> */}
 
       <Swiper
         modules={[Pagination, Navigation, EffectCoverflow, Autoplay]}
