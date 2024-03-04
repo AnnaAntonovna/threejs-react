@@ -8,15 +8,20 @@ const Tech = () => {
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
+
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      {technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
       {width > 450 ? (
-        <></>
+        <>
+          {technologies.map((technology) => (
+            <div className="w-28 h-28" key={technology.name}>
+              <BallCanvas icon={technology.icon} />
+            </div>
+          ))}
+        </>
       ) : (
         <iframe
           width="450"

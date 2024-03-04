@@ -9,20 +9,23 @@ const Plan = () => {
   const [active, setActive] = useState("");
   const navigate = useNavigate();
 
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
   const layoutStyle = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     border: "6px solid transparent",
-    height: "500px", // You can adjust the height as needed
+    //height: "500px", // You can adjust the height as needed
+    height: width > 450 ? "500px" : "250px",
     width: "580px", // You can adjust the width as needed
+    width: width > 450 ? "580px" : "290px",
     boxSizing: "border-box",
   };
 
-  //WE NEED TO USE THIS!
-  /* const section = document.getElementById(link.id);
-  section && section.scrollIntoView({ behavior: "smooth" });
-  window.location.href = `/#${link.id}`; */
   const handleLinkClick = (link) => {
     // If we're not on the home page, navigate to the home page first
     setTimeout(() => {
@@ -98,13 +101,23 @@ const Plan = () => {
           casa tu casa!
         </motion.p>
       </div>
-      <div className="mt-5 bg-plan-back bg-center bg-contain w-fit h-fit bg-no-repeat">
+      <div
+        className={
+          width > 450
+            ? "mt-5 bg-plan-back bg-center bg-contain w-fit h-fit bg-no-repeat"
+            : "mt-5 scale-0.5 bg-plan-back bg-center bg-contain w-fit h-fit bg-no-repeat"
+        }
+      >
         <div style={layoutStyle} className="p-4">
           <div style={rowStyle}>
             <Link
               to="/works#dynamo"
               style={boxStyle}
-              className="mt-1 h-[148px] text-center border-solid flex border-4 items-center justify-center border-transparent hover:bg-dynamo-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
+              className={
+                width > 450
+                  ? "mt-1 h-[148px] text-center border-solid flex border-4 items-center justify-center border-transparent hover:bg-dynamo-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
+                  : "h-[74px] text-xs text-center border-solid flex border-4 items-center justify-center border-transparent bg-center bg-contain"
+              }
             >
               Scripts (Python + Revit API)
             </Link>
@@ -113,7 +126,11 @@ const Plan = () => {
               to="/works#csharp"
               onClick={() => handleLinkClick("#csharp")}
               style={boxStyle}
-              className="mt-1 h-[148px] text-center items-center justify-center border-transparent bg-no-repeat hover:bg-cold-gray hover:bg-plugin-back bg-center bg-cover hover:text-transparent hover:ease-in-out transition duration-100 ease-out cursor-pointer"
+              className={
+                width > 450
+                  ? "mt-1 h-[148px] text-center items-center justify-center border-transparent bg-no-repeat hover:bg-cold-gray hover:bg-plugin-back bg-center bg-cover hover:text-transparent hover:ease-in-out transition duration-100 ease-out cursor-pointer"
+                  : "h-[74px] text-xs text-center items-center justify-center border-transparent bg-no-repeat bg-center bg-cover"
+              }
             >
               C# Plugins (RevitAPI + WPF)
             </Link>
@@ -123,7 +140,11 @@ const Plan = () => {
               to="/works#bimprojects"
               onClick={() => handleLinkClick("#bimprojects")}
               style={tallBoxStyle}
-              className="h-[147px] hover:bg-bim-back bg-center bg-contain hover:bg-white  bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+              className={
+                width > 450
+                  ? "h-[147px] hover:bg-bim-back bg-center bg-contain hover:bg-white  bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+                  : "h-[74px] text-xs text-center items-center justify-center border-transparent bg-no-repeat bg-center bg-cover"
+              }
             >
               BIM Projects
             </Link>
@@ -132,7 +153,11 @@ const Plan = () => {
               to="/works#calculation"
               onClick={() => handleLinkClick("#calculation")}
               style={tallBoxStyle}
-              className="h-[147px] hover:bg-calc-back hover:bg-white bg-center bg-contain bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+              className={
+                width > 450
+                  ? "h-[147px] hover:bg-calc-back hover:bg-white bg-center bg-contain bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+                  : "h-[74px] text-xs text-center items-center justify-center border-transparent bg-no-repeat bg-center bg-cover"
+              }
             >
               Calculations
             </Link>
@@ -141,15 +166,23 @@ const Plan = () => {
             <Link
               to="/works#web"
               onClick={() => handleLinkClick("#web")}
-              className="h-[154px] w-1/2 border-solid flex border-4 text-center items-center justify-center border-transparent hover:bg-web-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+              className={
+                width > 450
+                  ? "h-[154px] w-1/2 border-solid flex border-4 text-center items-center justify-center border-transparent hover:bg-web-back bg-center bg-contain hover:text-transparent hover:ease-in-out transition duration-150 ease-out  cursor-pointer"
+                  : "ml-[25px] -mt-[40px] h-[74px] text-xs text-center items-center justify-center border-transparent bg-no-repeat bg-center bg-cover"
+              }
             >
-              Websites (JavaScript/TypesScript)
+              Websites <br></br>(JavaScript)
             </Link>
             <div style={boxStyle} className="h-[154px]"></div>
             <Link
               to="/works"
               style={boxStyle}
-              className="h-[154px] hover:bg-more-back hover:bg-white bg-center bg-cover bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
+              className={
+                width > 450
+                  ? "h-[154px] hover:bg-more-back hover:bg-white bg-center bg-cover bg-no-repeat hover:text-transparent hover:ease-in-out transition duration-150 ease-out cursor-pointer"
+                  : "ml-[60px] -mt-[60px] h-[74px] text-xs text-center items-center justify-center border-transparent bg-no-repeat bg-center bg-cover"
+              }
             >
               {" "}
               More projects!

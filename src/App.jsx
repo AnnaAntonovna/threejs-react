@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState, lazy } from "react";
 import {
-  About,
-  Experience,
   Hero,
   Navbar,
   StarsCanvas,
@@ -19,6 +17,8 @@ const Certificates = lazy(() => import("./components/Certificates"));
 const Talks = lazy(() => import("./components/Talks"));
 const Plan = lazy(() => import("./components/Plan"));
 const Tech = lazy(() => import("./components/Tech"));
+const Experience = lazy(() => import("./components/Experience"));
+const About = lazy(() => import("./components/About"));
 const App = () => {
   var ua = navigator.userAgent.toLowerCase();
   var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
@@ -27,6 +27,11 @@ const App = () => {
   }
 
   const [heroLoading, setHeroLoading] = useState(true);
+
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
 
   useEffect(() => {
     // Set a timeout for the estimated loading duration of the Hero component
@@ -66,11 +71,11 @@ const App = () => {
                   <About />
                   <Talks />
                   <Experience />
+                  <Plan />
                   <div className="bg-cert-back bg-cover bg-no-repeat bg-center">
                     <Certificates />
                   </div>
                   <Tech />
-                  <Plan />
                   <div className="relative z-0">
                     <Contact />
                     <StarsCanvas />
@@ -87,7 +92,6 @@ const App = () => {
                   <WebProjects />
                   <BIMProjects />
                   <Calculations />
-                  <Tech />
                   <div className="relative z-0">
                     <Contact />
                     <StarsCanvas />

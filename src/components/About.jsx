@@ -24,8 +24,6 @@ const ServiceCard = ({ index, title, icon, className }) => {
           }}
           className={className}
         >
-          {/* <img src={icon} alt={title} 
-          className='w-16 h-16 object-contain' />  */}
           <h3
             className="text-[25px] font-bold
           text-center"
@@ -39,6 +37,10 @@ const ServiceCard = ({ index, title, icon, className }) => {
 };
 
 const About = () => {
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -65,6 +67,17 @@ const About = () => {
         being a part of Research and Development department.
         <br />I am excited to discover new horizons in the world of BIM!
       </motion.p>
+
+      <motion.div
+        variants={fadeIn("up", "spring", 2.15, 0.75)}
+        className="text-center"
+      >
+        <p className={styles.sectionSubText}>
+          {width > 450
+            ? "🪄Hover a card to know me better🪄"
+            : "🪄Tap a card to know me better🪄"}
+        </p>
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
