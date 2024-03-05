@@ -41,6 +41,20 @@ import {
   youtube,
   calcs,
   anna,
+  tshirt,
+  shareme,
+  mouse,
+  excel,
+  manager,
+  guards,
+  webster,
+  crop,
+  background,
+  schedule,
+  webrevit,
+  analytical,
+  calcus,
+  rebar,
 } from "../assets";
 
 export const navLinks = [
@@ -639,12 +653,45 @@ const webProjects = [
       },
     ],
     source_code_link: "https://github.com/AnnaAntonovna/ThreeJs-OpenAI-React",
-    src: "https://www.youtube.com/embed/znNPC5e0NMk?si=MBp-gjvcWjRRpKJ8",
-    video: true,
+    //src: "https://www.youtube.com/embed/znNPC5e0NMk?si=MBp-gjvcWjRRpKJ8",
+    image: tshirt,
+    video: false,
     github: true,
   },
+  {
+    name: "Pinterest-gallery 🔇",
+    description:
+      "Based on sanity back-end, web-gallery-application created wth JavaScript and React.js.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Sanity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Google Oauth",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://youtu.be/pDb8i8TMe4U?si=_mWljuz36jufyxiN",
+    src: "https://www.youtube.com/embed/pDb8i8TMe4U?si=D1PxE3_4gMpfXNz4",
+    image: shareme,
+    video: false,
+    github: false,
+  },
 
-  /* {
+  {
     name: "annabaranova.com",
     description:
       "I love my parents so much that I just really wanted the best project of my parents to get recognized and find a great job",
@@ -671,14 +718,216 @@ const webProjects = [
       },
     ],
     source_code_link: "https://github.com/AnnaAntonovna/threejs-react",
-    src: { anna },
+    image: anna,
     video: false,
     github: true,
-  }, */
+  },
 ];
 
 const cSharp = [
   {
+    name: "Crop region by mouse",
+    description: "Crops a view by mouse rectangle selection",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: mouse,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Selected parameters to Excel",
+    description:
+      "Ever wanted to get some specific parameters only of a view elements of a certain category? You are heard.",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: excel,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Joint Manager",
+    description:
+      "Manage joint relarionship between two selected categories on the active view, in the whole project or by a smart manual selection: cut, unjoin, switch, join!",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: manager,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Guards",
+    description:
+      "Carefully watching after new elements created by a user. Forbids the creation of new model-in-place elements. (Based on Revit API Updaters).",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: guards,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Web inside of Revit",
+    description:
+      "You have a reason not to use Autodesk Forge? Yes, I've made it possible to put web browser inside of Revit. Is it a good idea? Ask me on the interview",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WebView2",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: webster,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Automize Crop Region",
+    description: "Set crop region color and line stile",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: crop,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Lost&Found: Background color",
+    description:
+      "Select a custom color for a background that would safe your eyes healthy",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: background,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Schedule of a family type  by selected element",
+    description:
+      "The schedule department ready to make a schedule of all the elements of a family type by one element selected on a view",
+    tags: [
+      {
+        name: "C#",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WPF",
+        color: "blue-text-gradient",
+      },
+      {
+        name: ".NET",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://github.com/",
+    image: schedule,
+    video: false,
+    github: false,
+  },
+  /* {
     name: "Beatiful banch of tools 🔇",
     description: "Shortly, silently, an assorty of one-conept Revit tools",
     tags: [
@@ -695,9 +944,9 @@ const cSharp = [
     src: "https://www.youtube.com/embed/99G8M0cRpsA?si=_nC9iv1lStNQOFOu",
     video: true,
     github: false,
-  },
+  }, */
   {
-    name: "DEMO: Revit Families in a Web Library with IFC.js 🔇",
+    name: "DEMO: Revit Families in a Web Library with IFC.js",
     description:
       "A little experiment of Web implementation into revit without using Forge.",
     tags: [
@@ -727,34 +976,8 @@ const cSharp = [
       },
     ],
     source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/_qFzakScd9I?si=CH5b6uVt-AgaFGzm",
-    video: true,
-    github: false,
-  },
-  {
-    name: "Revit Plugin: Style Crop Region 🔇",
-    description: "",
-    tags: [
-      {
-        name: "C#",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Revit API",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "WPF",
-        color: "blue-text-gradient",
-      },
-      {
-        name: ".NET",
-        color: "blue-text-gradient",
-      },
-    ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/wEYd5oMvrXA?si=GCup6IWfgrVycygf",
-    video: true,
+    image: webrevit,
+    video: false,
     github: false,
   },
 ];
@@ -882,6 +1105,122 @@ const Calculations = [
     github: false,
   }, */
   {
+    name: "Calculation and modeling of large-span wooden roof",
+    description: "Something I made during BIM Championship",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: analytical,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Calculation of all the bearing structures",
+    description: "Something I made during BIM Championship",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: calcus,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Applying calculation results into the model",
+    description: "Something I made during BIM Championship",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: rebar,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Calculations of a skyscraper",
+    description: "Meet a little peace of my diploma project!",
+    tags: [
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LIRA",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: calcs,
+    video: false,
+    github: false,
+  },
+  /* {
     name: "National BIM Championship full-cycle🔇",
     description:
       "Starting from architectural draft to a model with structures fully calculated. The whole project was done by me in 5 working days, this was possible due to pre-made templates and scripts.",
@@ -911,7 +1250,7 @@ const Calculations = [
     src: "https://www.youtube.com/embed/Ii-BvNykBV4?si=t_mSCaRsakZ8rDUv",
     video: true,
     github: false,
-  },
+  }, */
   {
     name: "Qualifying BIM Championship full-cycle",
     description:

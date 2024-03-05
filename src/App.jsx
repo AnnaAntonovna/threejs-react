@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useEffect, useState, lazy } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import {
   Hero,
   Navbar,
@@ -43,12 +43,6 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const onHeroLoaded = () => {
-    setHeroLoading(false);
-
-    console.log("Hero loaded");
-  };
-
   return (
     <>
       <Sugar
@@ -62,44 +56,46 @@ const App = () => {
           <div className="bg-cold-gray">
             <Navbar />
           </div>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <About />
-                  <Talks />
-                  <Experience />
-                  <Plan />
-                  <div className="bg-cert-back bg-cover bg-no-repeat bg-center">
-                    <Certificates />
-                  </div>
-                  <Tech />
-                  <div className="relative z-0">
-                    <Contact />
-                    <StarsCanvas />
-                  </div>
-                </>
-              }
-            />
-            <Route
-              path="/works"
-              element={
-                <>
-                  <Dynamo />
-                  <CSharp />
-                  <WebProjects />
-                  <BIMProjects />
-                  <Calculations />
-                  <div className="relative z-0">
-                    <Contact />
-                    <StarsCanvas />
-                  </div>
-                </>
-              }
-            />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <About />
+                    <Experience />
+                    <Plan />
+                    <Tech />
+                    <div className="bg-cert-back bg-cover bg-no-repeat bg-center">
+                      <Certificates />
+                    </div>
+                    <div className="relative z-0">
+                      <Contact />
+                      <StarsCanvas />
+                    </div>
+                  </>
+                }
+              />
+              <Route
+                path="/works"
+                element={
+                  <>
+                    <Dynamo />
+                    <CSharp />
+                    <WebProjects />
+                    <BIMProjects />
+                    <Calculations />
+                    {/* <Talks /> */}
+                    <div className="relative z-0">
+                      <Contact />
+                      <StarsCanvas />
+                    </div>
+                  </>
+                }
+              />
+            </Routes>
+          </Suspense>
         </div>
       </BrowserRouter>
     </>

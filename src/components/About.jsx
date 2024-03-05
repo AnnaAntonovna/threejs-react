@@ -56,26 +56,29 @@ const About = () => {
         <img
           src={me}
           alt={"me"}
-          className="mr-[50px] xs:ml-[6px] xs:max-w-[250px] xs:h-[300px] mb-[50px] xs:mb-[0px]"
+          className="mr-[50px] xs:ml-[6px] xs:max-w-[350px] xs:h-[500px] mb-[50px] xs:mb-[0px]"
         />
-        As a student, I achieved the title of Best BIM Structural Engineer in a
-        national BIM championship. During my time at Renaissance Construction,
-        an international corporation that built Europe's tallest skyscraper, I
-        initiated and executed a successful rebar automation project using
-        Python, Revit API, and Dynamo. After graduation, I relocated to Europe
-        and expanded my automation skills in C#, WPF, JavaScript, IFC in web,
-        being a part of Research and Development department.
-        <br />I am excited to discover new horizons in the world of BIM!
+        That's me! As a student, I achieved the title of Best BIM Structural
+        Engineer in a national BIM championship and won the group classification
+        with my team. Little later, during my time at Renaissance Construction,
+        known for constructing Europe's tallest skyscraper, I boldly initiated
+        and led an automation project, enhancing my skills in Python, Revit API,
+        and Dynamo. After graduation, I decided to continue my career path in
+        Europe. Discovering new cultures I also expanded my automation skills in
+        C#, WPF, JavaScript, IFC in web. Working in R&D, I tackle the toughest
+        challenges, constantly learn new technologies, and sometimes making
+        articles and videos out of it! Are you ready to discover new horizons in
+        the world of BIM together?
       </motion.p>
 
       <motion.div
         variants={fadeIn("up", "spring", 2.15, 0.75)}
-        className="text-center"
+        className="text-center mt-[30px] "
       >
         <p className={styles.sectionSubText}>
           {width > 450
-            ? "🪄Hover a card to know me better🪄"
-            : "🪄Tap a card to know me better🪄"}
+            ? "🪄Hover a card to know who I am🪄"
+            : "🪄Tap a card to know who I am🪄"}
         </p>
       </motion.div>
 

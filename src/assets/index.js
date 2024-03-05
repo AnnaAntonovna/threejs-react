@@ -53,6 +53,8 @@ import commandChanger from "./commandChanger.png";
 import grass from "./grass.png";
 import calcs from "./calcs.png";
 import anna from "./anna.png";
+import tshirt from "./threejs.gif";
+import shareme from "./shareme.gif";
 
 import webCert from "./awards/webCert.png";
 import strucCert from "./awards/strucCert.png";
@@ -73,6 +75,19 @@ import restCert from "./awards/restCert.png";
 import me from "./me.jpeg";
 import gmail from "./gmail.png";
 import youtube from "./youtube.png";
+
+import background from "./csharp/background.gif";
+import crop from "./csharp/crop.gif";
+import excel from "./csharp/excel.gif";
+import guards from "./csharp/guards.gif";
+import manager from "./csharp/manager.gif";
+import mouse from "./csharp/mouse.gif";
+import schedule from "./csharp/schedule.gif";
+import webster from "./csharp/webster.gif";
+import webrevit from "./csharp/ifc.gif";
+import analytical from "./calcus/analytical.gif";
+import calcus from "./calcus/calcs.gif";
+import rebar from "./calcus/rebar.gif";
 
 export {
   logo,
@@ -145,4 +160,18 @@ export {
   youtube,
   calcs,
   anna,
+  tshirt,
+  shareme,
+  background,
+  crop,
+  excel,
+  guards,
+  manager,
+  mouse,
+  schedule,
+  webster,
+  webrevit,
+  analytical,
+  rebar,
+  calcus,
 };
