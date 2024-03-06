@@ -53,12 +53,24 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+      {width > 450 ? (
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>What I have done so far</p>
+          <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        </motion.div>
+      ) : (
+        <div>
+          <p className={styles.sectionSubText}>What I have done so far</p>
+          <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        </div>
+      )}
+
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (

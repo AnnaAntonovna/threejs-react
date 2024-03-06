@@ -86,7 +86,7 @@ const services = [
     title: "Revit API Developer",
     icon: mobile,
     className:
-      "bg-house-card bg-cover bg-no-repeat bg-center bg-navy hover:bg-house-back-card rounded-[20px] py-5 px-12 min-w-[248px] h-[370px] flex justify-evenly items-center flex-col",
+      "bg-house-card bg-cover bg-no-repeat bg-center bg-navy hover:bg-house-back-card rounded-[20px] py-5 px-12  h-[370px] flex justify-evenly items-center flex-col",
   },
   {
     title: "BIM Specialist",
@@ -619,7 +619,7 @@ const scripts = [
     github: false,
   },
   {
-    name: "Lesson: 'Sections By Curve part 1' 🔊",
+    name: "Lesson: Sections By Curve part 1 🔊",
     description:
       "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
     tags: [
@@ -642,7 +642,7 @@ const scripts = [
     github: false,
   },
   {
-    name: "Lesson: 'Sections By Curve part 2' 🔊",
+    name: "Lesson: Sections By Curve part 2🔊",
     description:
       "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
     tags: [
@@ -811,11 +811,10 @@ const webProjects = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://youtu.be/pDb8i8TMe4U?si=_mWljuz36jufyxiN",
-    src: "https://www.youtube.com/embed/pDb8i8TMe4U?si=D1PxE3_4gMpfXNz4",
+    source_code_link: "https://github.com/AnnaAntonovna/ShareMe-React",
     image: shareme,
     video: false,
-    github: false,
+    github: true,
   },
 
   {

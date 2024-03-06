@@ -8,7 +8,7 @@ const Hero = () => {
     document.documentElement.clientWidth ||
     document.body.clientWidth;
   return (
-    <section className="relative w-full h-fit xs:h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[200px] max-w-7xl mx-auto 
       flex flex-row items-start gap-5 z-20 h-[180px]`}
@@ -51,10 +51,11 @@ const Hero = () => {
           <></>
         )}
       </div>
-      {width > 450 ? (
+      {width > 50 ? (
         <ComputersCanvas />
       ) : (
-        <div className="flex-col w-screen h-screen">
+        {
+          /* <div className="flex-col w-screen h-screen">
           <iframe
             width="450"
             height="699"
@@ -65,7 +66,8 @@ const Hero = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-        </div>
+        </div> */
+        }
       )}
 
       <div

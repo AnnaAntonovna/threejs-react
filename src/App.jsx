@@ -12,13 +12,14 @@ import {
 } from "./components";
 import Sugar from "react-preloaders/lib/Sugar/Sugar";
 
-const Contact = lazy(() => import("./components/Contact"));
-const Certificates = lazy(() => import("./components/Certificates"));
-const Talks = lazy(() => import("./components/Talks"));
-const Plan = lazy(() => import("./components/Plan"));
-const Tech = lazy(() => import("./components/Tech"));
-const Experience = lazy(() => import("./components/Experience"));
 const About = lazy(() => import("./components/About"));
+const Experience = lazy(() => import("./components/Experience"));
+const Plan = lazy(() => import("./components/Plan"));
+const Certificates = lazy(() => import("./components/Certificates"));
+const Contact = lazy(() => import("./components/Contact"));
+const Talks = lazy(() => import("./components/Talks"));
+const Tech = lazy(() => import("./components/Tech"));
+
 const App = () => {
   var ua = navigator.userAgent.toLowerCase();
   var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
