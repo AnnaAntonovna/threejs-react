@@ -112,6 +112,7 @@ const Plan = () => {
           <div style={rowStyle}>
             <Link
               to="/works#dynamo"
+              onClick={() => handleLinkClick("#dynamo")}
               style={boxStyle}
               className={
                 width > 450

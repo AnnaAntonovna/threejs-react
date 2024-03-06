@@ -86,7 +86,7 @@ const App = () => {
                     <WebProjects />
                     <BIMProjects />
                     <Calculations />
-                    {/* <Talks /> */}
+                    <Talks />
                     <div className="relative z-0">
                       <Contact />
                       <StarsCanvas />

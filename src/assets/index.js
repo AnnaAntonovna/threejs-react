@@ -55,6 +55,7 @@ import calcs from "./calcs.png";
 import anna from "./anna.png";
 import tshirt from "./threejs.gif";
 import shareme from "./shareme.gif";
+import ifcweb from "./ifcweb.gif";
 
 import webCert from "./awards/webCert.png";
 import strucCert from "./awards/strucCert.png";
@@ -88,6 +89,11 @@ import webrevit from "./csharp/ifc.gif";
 import analytical from "./calcus/analytical.gif";
 import calcus from "./calcus/calcs.gif";
 import rebar from "./calcus/rebar.gif";
+
+import dynamoui from "./dynamo/dynamoUI.gif";
+import rebardyn from "./dynamo/rebardyn.gif";
+import shafts from "./dynamo/shafts.gif";
+import wow from "./dynamo/wow.gif";
 
 export {
   logo,
@@ -174,4 +180,9 @@ export {
   analytical,
   rebar,
   calcus,
+  dynamoui,
+  rebardyn,
+  shafts,
+  wow,
+  ifcweb,
 };

@@ -55,6 +55,11 @@ import {
   analytical,
   calcus,
   rebar,
+  dynamoui,
+  rebardyn,
+  shafts,
+  wow,
+  ifcweb,
 } from "../assets";
 
 export const navLinks = [
@@ -267,8 +272,7 @@ const testimonials = [
 const projects = [
   {
     name: "Capital bar reinforcement scripts with UI",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    description: "",
     tags: [
       {
         name: "Python",
@@ -294,8 +298,7 @@ const projects = [
   },
   {
     name: "Automatization of Revit Reinforcement with DXF",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    description: "",
     tags: [
       {
         name: "Python",
@@ -321,8 +324,7 @@ const projects = [
   },
   {
     name: "Reinforcement of openings in slab shafts",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    description: "",
     tags: [
       {
         name: "Python",
@@ -349,8 +351,7 @@ const projects = [
 
   {
     name: "Revit Plugin: Style Crop Region",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    description: "",
     tags: [
       {
         name: "C#",
@@ -369,8 +370,7 @@ const projects = [
 
   {
     name: "IFCjs React application 🔇",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    description: "",
     tags: [
       {
         name: "TypeScript",
@@ -513,7 +513,7 @@ const scripts = [
   {
     name: "Capital bar reinforcement scripts with UI",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "WinForm-RevitAPI-IronPython-based magic of reinforcing capitals!",
     tags: [
       {
         name: "Python",
@@ -533,14 +533,68 @@ const scripts = [
       },
     ],
     source_code_link: "https://youtu.be/772KN7DDoj8",
-    src: "https://www.youtube.com/embed/772KN7DDoj8?si=-WOEJb89N5oBhC_3",
-    video: true,
+    image: rebardyn,
+    video: false,
+    github: false,
+  },
+
+  {
+    name: "Capital bar reinforcement scripts with UI",
+    description:
+      "WinForm-RevitAPI-IronPython-based magic of reinforcing capitals!",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WinForms",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://youtu.be/772KN7DDoj8",
+    image: dynamoui,
+    video: false,
+    github: false,
+  },
+  {
+    name: "What was behind?",
+    description:
+      "Background of WinForm-RevitAPI-IronPython-based magic of reinforcing capitals!",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WinForms",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://youtu.be/772KN7DDoj8",
+    image: wow,
+    video: false,
     github: false,
   },
   {
     name: "Automatization of Revit Reinforcement with DXF",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    description: "Automation of area reinforcement",
     tags: [
       {
         name: "Python",
@@ -565,9 +619,55 @@ const scripts = [
     github: false,
   },
   {
+    name: "Lesson: 'Sections By Curve part 1' 🔊",
+    description:
+      "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://youtu.be/Fic5BD-s3A8?si=bg0BzFeuXwcN7qX5",
+    src: "https://www.youtube.com/embed/Fic5BD-s3A8?si=rl5QDNFRjU3XqxKs",
+    video: true,
+    github: false,
+  },
+  {
+    name: "Lesson: 'Sections By Curve part 2' 🔊",
+    description:
+      "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://youtu.be/GMzoIS703FA?si=zzvoGAXIbbQ4GEn1",
+    src: "https://www.youtube.com/embed/GMzoIS703FA?si=Hsv78-AE2NUh9YfU",
+    video: true,
+    github: false,
+  },
+  /* {
     name: "Reinforcement of openings in slab shafts",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Yes, that's also based on Dynamo, IronPython, WinForms and (a little bit of) RevitAPI",
     tags: [
       {
         name: "Python",
@@ -587,17 +687,44 @@ const scripts = [
       },
     ],
     source_code_link: "https://youtu.be/ECcn3_cnxdE",
-    src: "https://www.youtube.com/embed/ECcn3_cnxdE?si=nMIm3X1Dueh3EkPt",
+    image: shafts,
+    video: false,
+    github: false,
+  }, */
+  /*  {
+    name: "Capital bar reinforcement scripts with UI",
+    description:
+      "WinForm-RevitAPI-IronPython-based magic of reinforcing capitals!",
+    tags: [
+      {
+        name: "Python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Revit API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WinForms",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link: "https://youtu.be/772KN7DDoj8",
+    src: "https://www.youtube.com/embed/772KN7DDoj8?si=-WOEJb89N5oBhC_3",
     video: true,
     github: false,
-  },
+  }, */
 ];
 
 const webProjects = [
   {
-    name: "IFCjs React application 🔇",
+    name: "IFCjs React application",
     description:
-      "IFC models placed on the 3d map with a possibility to check properties of every element even on modeli phone? Yes, yes, already done.",
+      "IFC models placed on the 3D map with a possibility to check properties of every element even on mobile phone? Yes, yes, already done.",
     tags: [
       {
         name: "TypeScript",
@@ -621,13 +748,13 @@ const webProjects = [
       },
     ],
     source_code_link: "https://github.com/AnnaAntonovna/my-first-app",
-    src: "https://www.youtube.com/embed/63Sm2AdSNVo?si=Q81unfFy_QxswB2z",
-    video: true,
+    image: ifcweb,
+    video: false,
     github: true,
   },
 
   {
-    name: "First steps with THREE.js and openAI API 🔇",
+    name: "First steps with THREE.js and openAI API",
     description:
       "Why not to create a 3D T-shirt customizer with AI generating prints? I know it's impressive, but actually it has nothing to do with me. (I simply followed step-by step guide of amazing Adrian from JS Mastery).",
     tags: [
@@ -659,9 +786,9 @@ const webProjects = [
     github: true,
   },
   {
-    name: "Pinterest-gallery 🔇",
+    name: "Pinterest-gallery",
     description:
-      "Based on sanity back-end, web-gallery-application created wth JavaScript and React.js.",
+      "Based on sanity backend, web-gallery-application created wth JavaScript and React.js.",
     tags: [
       {
         name: "JavaScript",
@@ -694,7 +821,7 @@ const webProjects = [
   {
     name: "annabaranova.com",
     description:
-      "I love my parents so much that I just really wanted the best project of my parents to get recognized and find a great job",
+      "I just really wanted the best project of my parents to get recognized and get a job of her dreams",
     tags: [
       {
         name: "JavaScript",
@@ -849,7 +976,7 @@ const cSharp = [
   },
   {
     name: "Automize Crop Region",
-    description: "Set crop region color and line stile",
+    description: "Set crop region color and line style",
     tags: [
       {
         name: "C#",
@@ -1193,7 +1320,7 @@ const Calculations = [
   },
   {
     name: "Calculations of a skyscraper",
-    description: "Meet a little peace of my diploma project!",
+    description: "Meet a little piece of my diploma project!",
     tags: [
       {
         name: "Revit",
@@ -1251,7 +1378,7 @@ const Calculations = [
     video: true,
     github: false,
   }, */
-  {
+  /* {
     name: "Qualifying BIM Championship full-cycle",
     description:
       "Qualifying BIM Championship full-cycle: modeling, calculations, modeling according to calculations",
@@ -1277,7 +1404,7 @@ const Calculations = [
     src: "https://www.youtube.com/embed/PTK3IIjiKeA?si=dctMGu4cjdnx5opK",
     video: true,
     github: false,
-  },
+  }, */
 ];
 
 export {

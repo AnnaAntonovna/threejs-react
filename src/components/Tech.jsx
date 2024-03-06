@@ -23,15 +23,7 @@ const Tech = () => {
           ))}
         </>
       ) : (
-        <iframe
-          width="450"
-          height="210"
-          src="https://www.youtube.com/embed/Ii-BvNykBV4?si=zo2roy3G4q3lB19u"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <></>
       )}
     </div>
   );
