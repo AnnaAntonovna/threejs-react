@@ -72,8 +72,8 @@ const About = () => {
     <>
       {width < 450 ? (
         <>
-          <p className={styles.sectionSubText}>Let's talk about...</p>
-          <h2 className={styles.sectionHeadText}>Me.</h2>
+          <p className={styles.sectionSubText}>Introduction...</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
           <p
             className="mt-4 text-warm-brown text-[17px]
       max-w-3xl leading-[30px] xs:flex z-50"
@@ -117,8 +117,8 @@ const About = () => {
       ) : (
         <>
           <motion.div variants={textVariant()}>
-            <p className={styles.sectionSubText}>Let's talk about...</p>
-            <h2 className={styles.sectionHeadText}>Me.</h2>
+            <p className={styles.sectionSubText}>Introduction...</p>
+            <h2 className={styles.sectionHeadText}>Overview.</h2>
           </motion.div>
 
           <motion.p
