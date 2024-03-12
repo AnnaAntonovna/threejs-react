@@ -60,6 +60,8 @@ import {
   shafts,
   wow,
   ifcweb,
+  wood,
+  sky,
 } from "../assets";
 
 export const navLinks = [
@@ -202,7 +204,7 @@ const experiences = [
     ],
   },
   {
-    title: "BIM Engineer Intern",
+    title: "Junior BIM Engineer",
     company_name: "Renaissance Construction",
     icon: RC,
     iconBg: "white",
@@ -244,26 +246,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "That was just amazing how you explained that. I can't wait to watch more of you!",
+    name: "hamidsajjadi6780",
+    designation: "Kind commentator",
+    company: "my youtube Channel",
+    image: "https://myacpa.org/wp-content/uploads/2021/06/profile-blank.png",
+  },
+  {
+    testimonial: "Renaissance Construction was very lucky to have you",
     name: "Nikita Pavin",
     designation: "Lead BIM Specialist",
-    company: "Renaissance construction",
+    company: "ARUP (New York)",
     image:
       "https://media.licdn.com/dms/image/C4D03AQGO1vxqh1_pUw/profile-displayphoto-shrink_100_100/0/1580232624137?e=1714003200&v=beta&t=-FD0ER5q2q0Qyq5dwHZSidDnjvgYQUc83PXlngSNbQM",
   },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+
   {
     testimonial: "Many thanks to Anna for this nice piece of work!",
     name: "Jeremy Tammik",
     designation: "Consulting Analyst",
     company: "Autodesk",
+    link: "https://thebuildingcoder.typepad.com/blog/2023/12/3d-view-curved-section-and-browser-round-trip.html",
     image:
       "https://thebuildingcoder.typepad.com/2014-06-12_jeremy_bjoerkoe_cropped_150.png",
   },
@@ -404,7 +407,7 @@ const talks = [
   {
     name: "Lesson: 'Sections By Curve' 🔊",
     description:
-      "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
+      "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache. Well, I've been there, and I've got a solution for you.",
     tags: [
       {
         name: "Python",
@@ -511,7 +514,7 @@ const talks = [
 
 const scripts = [
   {
-    name: "Capital bar reinforcement scripts with UI",
+    name: "Capital reinforcement scripts with UI 1️⃣",
     description:
       "WinForm-RevitAPI-IronPython-based magic of reinforcing capitals!",
     tags: [
@@ -539,7 +542,7 @@ const scripts = [
   },
 
   {
-    name: "Capital bar reinforcement scripts with UI",
+    name: "Capital reinforcement scripts with UI 2️⃣",
     description:
       "WinForm-RevitAPI-IronPython-based magic of reinforcing capitals!",
     tags: [
@@ -621,7 +624,7 @@ const scripts = [
   {
     name: "Lesson: Sections By Curve part 1 🔊",
     description:
-      "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
+      "Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Well, I've been there, and I've got a solution for you.",
     tags: [
       {
         name: "Python",
@@ -644,7 +647,7 @@ const scripts = [
   {
     name: "Lesson: Sections By Curve part 2🔊",
     description:
-      "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache, especially for projects with non-linear architecture like tunnels or dams. Well, I've been there, and I've got a solution for you.",
+      "Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Well, I've been there, and I've got a solution for you.",
     tags: [
       {
         name: "Python",
@@ -754,9 +757,9 @@ const webProjects = [
   },
 
   {
-    name: "First steps with THREE.js and openAI API",
+    name: "Web: THREE.js and AI",
     description:
-      "Why not to create a 3D T-shirt customizer with AI generating prints? I know it's impressive, but actually it has nothing to do with me. (I simply followed step-by step guide of amazing Adrian from JS Mastery).",
+      "Why not to create a 3D T-shirt customizer with AI generating prints? Made with step-by step guide of amazing Adrian from JS Mastery.",
     tags: [
       {
         name: "JavaScript",
@@ -1027,7 +1030,7 @@ const cSharp = [
     github: false,
   },
   {
-    name: "Schedule of a family type  by selected element",
+    name: "Schedule of a family type",
     description:
       "The schedule department ready to make a schedule of all the elements of a family type by one element selected on a view",
     tags: [
@@ -1072,9 +1075,9 @@ const cSharp = [
     github: false,
   }, */
   {
-    name: "DEMO: Revit Families in a Web Library with IFC.js",
+    name: "Plugin 3D Web Library",
     description:
-      "A little experiment of Web implementation into revit without using Forge.",
+      "A little demo experiment of Web implementation into revit without using Forge.",
     tags: [
       {
         name: "C#",
@@ -1110,9 +1113,9 @@ const cSharp = [
 
 const BIMprojects = [
   {
-    name: "National BIM Championship full-cycle🔇",
+    name: "BIM Championship full-cycle🔇",
     description:
-      "Starting from architectural draft to a model with structures fully calculated. The whole project was done by me in 5 working days, this was possible due to pre-made templates and scripts.",
+      "Starting from architectural draft to a model with structures fully calculated in 5 working days, this was possible due to pre-made templates and scripts.",
     tags: [
       {
         name: "Revit",
@@ -1130,10 +1133,6 @@ const BIMprojects = [
         name: "Dynamo",
         color: "blue-text-gradient",
       },
-      {
-        name: "LIRA",
-        color: "blue-text-gradient",
-      },
     ],
     source_code_link: "https://youtu.be/Ii-BvNykBV4?si=yNLqOV2f_kT8FkFN",
     src: "https://www.youtube.com/embed/Ii-BvNykBV4?si=t_mSCaRsakZ8rDUv",
@@ -1141,9 +1140,8 @@ const BIMprojects = [
     github: false,
   },
   {
-    name: "Qualifying BIM Championship full-cycle",
-    description:
-      "Qualifying BIM Championship full-cycle: modeling, calculations, modeling according to calculations",
+    name: "Qualifying BIM Championship full-cycle 🔇",
+    description: "Modeling, calculations, modeling according to calculations",
     tags: [
       {
         name: "Revit",
@@ -1250,10 +1248,6 @@ const Calculations = [
         name: "Dynamo",
         color: "blue-text-gradient",
       },
-      {
-        name: "LIRA",
-        color: "blue-text-gradient",
-      },
     ],
     image: analytical,
     video: false,
@@ -1279,12 +1273,25 @@ const Calculations = [
         name: "Dynamo",
         color: "blue-text-gradient",
       },
+    ],
+    image: calcus,
+    video: false,
+    github: false,
+  },
+  {
+    name: "Calculation and modeling of a wooden dome",
+    description: "One of the course projects",
+    tags: [
       {
-        name: "LIRA",
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SCAD",
         color: "blue-text-gradient",
       },
     ],
-    image: calcus,
+    image: wood,
     video: false,
     github: false,
   },
@@ -1338,14 +1345,15 @@ const Calculations = [
         color: "blue-text-gradient",
       },
       {
-        name: "LIRA",
+        name: "ETABS",
         color: "blue-text-gradient",
       },
     ],
-    image: calcs,
+    image: sky,
     video: false,
     github: false,
   },
+
   /* {
     name: "National BIM Championship full-cycle🔇",
     description:
