@@ -89,8 +89,8 @@ const Contact = () => {
 
           <img
             src={gmail}
-            onClick={() => alert("Email: annabaranova.edu@gmail.com")}
-            alt="annabaranova.edu@gmail.com"
+            onClick={() => alert("Email: proposals@annabaranova.com")}
+            alt="proposals@annabaranova.com"
             className="w-[33px] h-[33px] object-contain cursor-pointer mr-[20px]"
           />
 

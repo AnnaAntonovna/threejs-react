@@ -51,11 +51,10 @@ const Hero = () => {
           <></>
         )}
       </div>
-      {width > 50 ? (
+      {width > 450 ? (
         <ComputersCanvas />
       ) : (
-        {
-          /* <div className="flex-col w-screen h-screen">
+        <div className="flex-col w-screen h-screen">
           <iframe
             width="450"
             height="699"
@@ -66,8 +65,7 @@ const Hero = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-        </div> */
-        }
+        </div>
       )}
 
       <div
