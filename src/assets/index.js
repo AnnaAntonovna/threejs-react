@@ -89,6 +89,8 @@ import webrevit from "./csharp/ifc.gif";
 import analytical from "./calcus/analytical.gif";
 import calcus from "./calcus/calcs.gif";
 import rebar from "./calcus/rebar.gif";
+import wood from "./calcus/wood.gif";
+import sky from "./calcus/sky.gif";
 
 import dynamoui from "./dynamo/dynamoUI.gif";
 import rebardyn from "./dynamo/rebardyn.gif";
@@ -185,4 +187,6 @@ export {
   shafts,
   wow,
   ifcweb,
+  wood,
+  sky,
 };
