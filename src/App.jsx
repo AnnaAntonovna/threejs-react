@@ -15,6 +15,7 @@ import Sugar from "react-preloaders/lib/Sugar/Sugar";
 const About = lazy(() => import("./components/About"));
 const Experience = lazy(() => import("./components/Experience"));
 const Plan = lazy(() => import("./components/Plan"));
+const Feedbacks = lazy(() => import("./components/Feedbacks"));
 const Certificates = lazy(() => import("./components/Certificates"));
 const Contact = lazy(() => import("./components/Contact"));
 const Talks = lazy(() => import("./components/Talks"));
@@ -71,6 +72,7 @@ const App = () => {
                     <div className="bg-cert-back bg-cover bg-no-repeat bg-center">
                       <Certificates />
                     </div>
+                    <Feedbacks />
                     <div className="relative z-0">
                       <Contact />
                       <StarsCanvas />
