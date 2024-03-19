@@ -405,9 +405,30 @@ const projects = [
 
 const talks = [
   {
-    name: "Lesson: 'Sections By Curve' 🔊",
+    name: "Lesson: 'Sections By Curve'(part 1) 🔊",
     description:
       "Oh, the drama of curve-based sections in Revit…. Ever found yourself in a Revit trap, trying to create sections for a curved element and hitting a brick wall? Drawing straight sections manually is a headache. Well, I've been there, and I've got a solution for you.",
+    tags: [
+      {
+        name: "Dynamo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Revit",
+        color: "blue-text-gradient",
+      },
+    ],
+    source_code_link:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7138135303126425600?utm_source=share&utm_medium=member_desktop",
+    src: "https://www.youtube.com/embed/Fic5BD-s3A8?si=rl5QDNFRjU3XqxKs",
+    video: true,
+    github: false,
+    spot: false,
+  },
+  {
+    name: "Lesson: 'Sections By Curve' (part 2) 🔊",
+    description:
+      "In this second installment, we're enhancing and finalizing the process by placing our automated sections on a sheet, streamlining your workflow even further.",
     tags: [
       {
         name: "Python",
@@ -422,10 +443,12 @@ const talks = [
         color: "blue-text-gradient",
       },
     ],
-    source_code_link: "https://github.com/",
-    src: "https://www.youtube.com/embed/Fic5BD-s3A8?si=rl5QDNFRjU3XqxKs",
+    source_code_link:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7142898286306217986?utm_source=share&utm_medium=member_desktop",
+    src: "https://www.youtube.com/embed/GMzoIS703FA?si=hWrP8GmWJX-I2Ej6",
     video: true,
     github: false,
+    spot: false,
   },
   {
     name: "Article: 'Selection by Ray Casting'",
@@ -451,7 +474,9 @@ const talks = [
       "https://www.linkedin.com/pulse/selection-ray-casting-when-you-only-know-direction-anna-baranova/?trackingId=pEb7k4VxSvOlLRM3zRTffw%3D%3D",
     video: false,
     github: false,
+    spot: false,
   },
+
   {
     name: "Article: 'Revit API: Command Binding'",
     description:
@@ -476,6 +501,7 @@ const talks = [
       "https://www.linkedin.com/pulse/command-binding-why-would-you-mess-around-default-revit-anna-baranova/",
     video: false,
     github: false,
+    spot: false,
   },
   {
     name: "Article: 'Exporting Elements as a family'",
@@ -509,6 +535,26 @@ const talks = [
       "https://www.linkedin.com/pulse/grasshopper-revit-api-exporting-elements-family-drama-anna-baranova/",
     video: false,
     github: false,
+  },
+  {
+    name: "AEC Professional Podcast: 'Constructive Talk'",
+    description:
+      "I couldn't believe my eyes when I recieved an invitation to be a guest of the podcast of my professional idols. Here's the result!",
+    tags: [
+      {
+        name: "Structural Engineering",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Russian",
+        color: "blue-text-gradient",
+      },
+    ],
+    src: "",
+    source_code_link: "https://open.spotify.com/show/2ZkjIvXF9VOIg5teSvzskd",
+    video: false,
+    github: false,
+    spot: true,
   },
 ];
 
@@ -791,7 +837,7 @@ const webProjects = [
   {
     name: "Pinterest-gallery",
     description:
-      "Based on sanity backend, web-gallery-application created wth JavaScript and React.js.",
+      "Based on sanity backend, web-gallery-application created with JavaScript and React.js.",
     tags: [
       {
         name: "JavaScript",

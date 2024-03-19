@@ -16,6 +16,7 @@ const TalksCard = ({
   source_code_link,
   src,
   video,
+  spot,
 }) => {
   const showVideo = video;
   console.log(showVideo);
@@ -41,11 +42,23 @@ const TalksCard = ({
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          ) : spot ? (
+            <iframe
+              src="https://open.spotify.com/embed/episode/6pVNFQCuuPnKHLNLrP30wo?utm_source=generator&theme=0"
+              className="w-full object-cover rounded-2xl"
+              width="100%"
+              height="232"
+              frameBorder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           ) : (
             <img
               src={image}
               alt={name}
-              className="w-full h-full object-cover rounded-2xl"
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="w-full h-full object-cover rounded-2xl cursor-pointer"
             />
           )}
         </div>
@@ -91,11 +104,11 @@ const Talks = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-warm-brown text-[17px] max-w-3xl leading-[30px]"
         >
-          It happens that on Autodesk forum something is marked as almost
-          impossible... That's usually a great sign that I can write an article
-          of how I solved the challenge! What might be a better feeling? Well,
-          there's one - to present these solutions in a simple and light manner
-          as adventurous journeys.
+          It happens that on Autodesk Revit API forum something is marked as
+          almost impossible... That's usually a great sign that I can write an
+          article of how I solved the challenge! What might be a better feeling?
+          Well, there's one - to present these solutions in a simple and light
+          manner as adventurous journeys.
         </motion.p>
       </div>
 

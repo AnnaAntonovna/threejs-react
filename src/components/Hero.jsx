@@ -30,7 +30,7 @@ const Hero = () => {
             Hi, it's <span>Anna</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 max-w-[500px]`}>
-            I develop BIM plugins, web-applications and automate AEC processes.
+            I automate AEC processes, develop BIM plugins and web-applications.
           </p>
         </motion.div>
         {width > 450 ? (

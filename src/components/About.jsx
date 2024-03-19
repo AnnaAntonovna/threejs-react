@@ -83,18 +83,22 @@ const About = () => {
               alt={"me"}
               className="mr-[50px] xs:ml-[6px] xs:max-w-[350px] xs:h-[500px] mb-[50px] xs:mb-[0px]"
             />
-            That's me! As a student, I achieved the title of Best BIM Structural
-            Engineer in a national BIM championship and won the group
-            classification with my team. Little later, during my time at
-            Renaissance Construction, known for constructing Europe's tallest
-            skyscraper, I boldly initiated and led an automation project,
-            enhancing my skills in Python, Revit API, and Dynamo. After
-            graduation, I decided to continue my career path in Europe.
-            Discovering new cultures I also expanded my automation skills in C#,
-            WPF, JavaScript, IFC in web. Working in R&D, I tackle the toughest
-            challenges, constantly learn new technologies, and sometimes making
-            articles and videos out of it! Are you ready to discover new
-            horizons in the world of BIM together?
+            👆 That’s me! With a solid foundation in a various programming
+            languages, I’m skilled in bridging the gap between traditional
+            construction practices and modern, automated methods.
+            <br />
+            <br /> My 6-years-long journey through Engineering of Unique
+            Buildings and Structures in University, alongside pioneering work at
+            Renaissance Construction, known for it’s groundbreaking buildings,
+            has sharpened my skills in complex structural engineering and
+            automation with Python and Dynamo. At Strategie Digitali, I've honed
+            my automation skills, exploring C#, JavaScript to push the
+            boundaries of automated solutions. Known for my achievements in
+            national BIM championships and teaching Revit Structure in my
+            alma-mater, I excel in innovating BIM processes. <br />
+            <br />
+            Ready ro explore BIM processes together? Let's create the new
+            frontiers of BIM innovation!
           </p>
 
           <div
@@ -124,25 +128,29 @@ const About = () => {
           <motion.p
             variants={fadeIn("", "", "0.1", 1)}
             className="mt-4 text-warm-brown text-[17px]
-      max-w-3xl leading-[30px] xs:flex z-50"
+      max-w-4xl leading-[30px] xs:flex z-50"
           >
             <img
               src={me}
               alt={"me"}
               className="mr-[50px] xs:ml-[6px] xs:max-w-[350px] xs:h-[500px] mb-[50px] xs:mb-[0px]"
             />
-            That's me! As a student, I achieved the title of Best BIM Structural
-            Engineer in a national BIM championship and won the group
-            classification with my team. Little later, during my time at
-            Renaissance Construction, known for constructing Europe's tallest
-            skyscraper, I boldly initiated and led an automation project,
-            enhancing my skills in Python, Revit API, and Dynamo. After
-            graduation, I decided to continue my career path in Europe.
-            Discovering new cultures I also expanded my automation skills in C#,
-            WPF, JavaScript, IFC in web. Working in R&D, I tackle the toughest
-            challenges, constantly learn new technologies, and sometimes making
-            articles and videos out of it! Are you ready to discover new
-            horizons in the world of BIM together?
+            👈 That’s me! With a solid foundation in a various programming
+            languages, I’m skilled in bridging the gap between traditional
+            construction practices and modern, automated methods.
+            <br />
+            <br /> My 6-years-long journey through Engineering of Unique
+            Buildings and Structures in University, alongside pioneering work at
+            Renaissance Construction, known for it’s groundbreaking buildings,
+            has sharpened my skills in complex structural engineering and
+            automation with Python and Dynamo. At Strategie Digitali, I've honed
+            my automation skills, exploring C#, JavaScript to push the
+            boundaries of automated solutions. Known for my achievements in
+            national BIM championships and teaching Revit Structure in my
+            alma-mater, I excel in innovating BIM processes. <br />
+            <br />
+            Ready to revolutionize BIM processes together? Let's explore the new
+            frontiers of BIM innovation!
           </motion.p>
 
           <motion.div
