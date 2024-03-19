@@ -149,7 +149,7 @@ const About = () => {
             national BIM championships and teaching Revit Structure in my
             alma-mater, I excel in innovating BIM processes. <br />
             <br />
-            Ready to revolutionize BIM processes together? Let's explore the new
+            Ready ro explore BIM processes together? Let's create the new
             frontiers of BIM innovation!
           </motion.p>
 
