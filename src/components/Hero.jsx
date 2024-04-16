@@ -33,7 +33,7 @@ const Hero = () => {
             I automate AEC processes, develop BIM plugins and web-applications.
           </p>
         </motion.div>
-        {width > 450 ? (
+        {width > 45 ? (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -51,7 +51,7 @@ const Hero = () => {
           <></>
         )}
       </div>
-      {width > 450 ? (
+      {width > 45 ? (
         <ComputersCanvas />
       ) : (
         <div className="flex-col w-screen h-screen">
